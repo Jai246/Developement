@@ -41,5 +41,12 @@ function applySflag(data)
     return final_data
 }
 
-let ans = applySflag(f1_data);
+let ans = applySflag(f1_data).join(\r\n);
 console.log(ans);
+
+// -b flag implementation
+
+function applyBflag(data)
+{
+    
+}
