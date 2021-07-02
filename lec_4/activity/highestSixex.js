@@ -5,7 +5,7 @@ const fs = require("fs");
 const cheerio = require("cheerio");
 // request is a high order function
 
-request(matchLink,cb);
+request(matchLink,cb); // hof
 
 function cb(error , response , data)
 {
@@ -31,11 +31,12 @@ function getHighestWicketTaker(data)
         for(let j = 0;j<allTableRows.length;j++)
         {
             let allTds = myDocument(allTableRows[j]).find("td");
+            //console.log(myDocument(allTds).text());
 
             if(i == 0 && j == 0)
             {
-                HighestSixexPlayerName = myDocument(allTds[0]).find("a").text();
-                HighestSixex = myDocument(allTds[6]).text();
+                HighestSixesPlayerName = myDocument(allTds[0]).find("a").text();
+                HighestSixes = myDocument(allTds[6]).text();
                 strikeRate = myDocument(allTds[7]).text();
             }
             else
@@ -51,8 +52,7 @@ function getHighestWicketTaker(data)
             }
         }
     }
-
-    console.log("Name of highest Sixex Player = " + HighestSixesPlayerName);
-    console.log("Sixex = " + HighestSixes);
+    console.log("Name of highest Sixes Player = " + HighestSixesPlayerName);
+    console.log("Sixes = " + HighestSixes);
     console.log("Strike Rate = " + strikeRate);
 }
