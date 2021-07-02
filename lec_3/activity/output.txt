@@ -1,0 +1,120 @@
+Hi I am F1
+
+
+
+
+
+Bye I Am F1
+
+
+
+
+
+Hi Again I Am F1
+
+
+
+
+Bye I Am F1
+
+
+
+
+
+Hi Again I Am F1
+Hi I Am F2
+
+
+Bye I Am F2
+
+
+-s output ->
+
+
+Hi I am F1
+ 
+Bye I Am F1
+ 
+Hi Again I Am F1
+ 
+Bye I Am F1
+ 
+Hi Again I Am F1
+
+
+
+-b output ->
+
+
+1. Hi I am F1
+
+
+
+
+
+2. Bye I Am F1
+
+
+
+
+
+3. Hi Again I Am F1
+
+
+
+
+4. Bye I Am F1
+
+
+
+
+
+5. Hi Again I Am F1
+
+
+
+
+
+
+-n output ->
+
+
+1. Hi I am F1
+2. 
+3. 
+4. 
+5. 
+6. 
+7. Bye I Am F1
+8. 
+9. 
+10. 
+11. 
+12. 
+13. Hi Again I Am F1
+14. 
+15. 
+16. 
+17. 
+18. Bye I Am F1
+19. 
+20. 
+21. 
+22. 
+23. 
+24. Hi Again I Am F1
+
+
+
+1. Hi I am F1
+2.  
+3. Bye I Am F1
+4.  
+5. Hi Again I Am F1
+6.  
+7. Bye I Am F1
+8.  
+9. Hi Again I Am F1
+10. Hi I Am F2
+11.  
+12. Bye I Am F2
