@@ -1,35 +1,35 @@
-Pathum Nissanka  b SM Curran512201041.66
+Pathum Nissanka 
 
-Kusal Perera (c)†lbw b SM Curran028000.00
+Kusal Perera (c)†
 
-Avishka Fernando lbw b SM Curran22400100.00
+Avishka Fernando 
 
-Dhananjaya de Silva c Root b Willey9191150130100.00
+Dhananjaya de Silva 
 
-Charith Asalanka c sub (GHS Garton) b Willey311150027.27
+Charith Asalanka 
 
-Wanindu Hasaranga c Billings b SM Curran2649672053.06
+Wanindu Hasaranga 
 
-Dasun Shanaka c SM Curran b Willey47671002170.14
+Dasun Shanaka 
 
-Chamika Karunaratne c †Bairstow b SM Curran2138501055.26
+Chamika Karunaratne 
 
-Binura Fernando c Rashid b Willey17152130113.33
+Binura Fernando 
 
-Dushmantha Chameera not out 14121601116.66
+Dushmantha Chameera 
 
-Asitha Fernando not out 11400100.00
+Asitha Fernando 
 
-Extras(lb 1, w 13)14
-Jason Roy c DM de Silva b Karunaratne605280100115.38
+Extras
+Jason Roy 
 
-Jonny Bairstow † b PWH de Silva2936593180.55
+Jonny Bairstow †
 
-Joe Root not out 68871315078.16
+Joe Root 
 
-Eoin Morgan (c)not out 75831098190.36
+Eoin Morgan (c)
 
-Extras(b 1, w 11)12
-Name of highest Sixex Player = undefined
-Sixex = undefined
-Strike Rate = 41.66
+Extras
+Name of highest Sixes Player = Eoin Morgan (c)
+Sixes = 1
+Strike Rate = 90.36

@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "browserify": "^17.0.0",
     "cheerio": "^1.0.0-rc.10",
+    "document": "^0.4.7",
+    "events": "^3.3.0",
+    "jsdom": "^16.6.0",
     "request": "^2.88.2"
   },
   "devDependencies": {},

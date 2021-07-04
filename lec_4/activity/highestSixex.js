@@ -31,7 +31,7 @@ function getHighestWicketTaker(data)
         for(let j = 0;j<allTableRows.length;j++)
         {
             let allTds = myDocument(allTableRows[j]).find("td");
-            //console.log(myDocument(allTds).text());
+            //console.log(myDocument(allTds[0]).text());
 
             if(i == 0 && j == 0)
             {
