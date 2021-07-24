@@ -1,20 +1,18 @@
 const fs = require("fs");
+const path  = require("path");
 let cwdPath = process.cwd();
-console.log(cwdPath);
-let folderPath = cwdPath + "/" + "WebDev";
+let folderPath = path.join(cwdPath,"WebDev");
 fs.mkdirSync(folderPath);
 
 let folderNames = process.argv.slice(" ");
-console.log(folderNames);
 for(let i = 2;i<folderNames.length;i++)
 {
     let webTech = folderNames[i];
-    let techPath = folderPath + "/" + webTech;
-    console.log(techPath);
+    let techPath = path.join(folderPath,webTech);
     fs.mkdirSync(techPath);
     for(let i = 1;i<=5;i++)
     {
-        moduleFolder = techPath + "/" + "Module_" + i; 
+        moduleFolder = path.join(techPath,"Module_" + i); 
         fs.mkdirSync(moduleFolder);
         fs.writeFileSync(moduleFolder +"/"+ "content.txt","Hi Welcome to " + webTech + " Folder .");
     }
