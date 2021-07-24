@@ -1,6 +1,6 @@
-var jsdom = require("jsdom");
-var JSDOM = jsdom.JSDOM;
-global.document = new JSDOM("./index.html").window.document;
+// var jsdom = require("jsdom");
+// var JSDOM = jsdom.JSDOM;
+// global.document = new JSDOM("./index.html").window.document;
 let addTodoButton = document.querySelector(".add-todo");
 let todoInput = document.querySelector(".todo-input");
 let todosList = document.querySelector(".todos-list-container");
@@ -11,6 +11,7 @@ todoInput.addEventListener("keypress", function (e) {
     addTodo();
   }
 });
+
 addTodoButton.addEventListener("click", function () {
   addTodo();
 });
@@ -47,7 +48,6 @@ function appendTodo(todo) {
 
   todosList.append(todoItemDiv);
 }
-
 function deleteTodo(e) 
 {
   e.target.parentNode.remove();

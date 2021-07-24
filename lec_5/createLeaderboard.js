@@ -1,6 +1,7 @@
 const cheerio = require("cheerio");
 const request = require("request");
 const fs = require("fs");
+const { parse } = require("path");
 
 
 function makeLeaderBoard(matchLink)
@@ -22,8 +23,6 @@ function IfPresent(file,playerName)
     }
     return -1;
 }
-
-
 
 function processData(html)
 {
@@ -61,6 +60,7 @@ function processData(html)
                     let player = {
                         "Player Name" : batsmanName,
                         "Team Name" : teamName,
+                        "Innings" : parseInt(1),
                         "Runs" : parseInt(runs),
                         "Balls" : parseInt(balls),
                         "Fours" : parseInt(fours),
@@ -71,6 +71,7 @@ function processData(html)
                 }
                 else
                 {
+                    file[check]["Innings"] += parseInt(1);
                     file[check]["Runs"] += parseInt(runs);
                     file[check]["Balls"] += parseInt(balls);
                     file[check]["Fours"] += parseInt(fours);
