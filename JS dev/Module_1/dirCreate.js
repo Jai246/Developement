@@ -3,7 +3,6 @@ const path  = require("path");
 let cwdPath = process.cwd();
 let folderPath = path.join(cwdPath,"WebDev");
 fs.mkdirSync(folderPath);
-
 let folderNames = process.argv.slice(" ");
 for(let i = 2;i<folderNames.length;i++)
 {
@@ -14,6 +13,6 @@ for(let i = 2;i<folderNames.length;i++)
     {
         moduleFolder = path.join(techPath,"Module_" + i); 
         fs.mkdirSync(moduleFolder);
-        fs.writeFileSync(moduleFolder +"/"+ "content.txt","Hi Welcome to " + webTech + " Folder .");
+        fs.writeFileSync(path.join(moduleFolder,"content.txt"),"Hi Welcome to " + webTech + " Folder .");
     }
 }
