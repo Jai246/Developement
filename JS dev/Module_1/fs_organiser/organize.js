@@ -28,7 +28,7 @@ function organizeFn(src)
                 {
                     if(!fs.existsSync(path.join(src,keys[j]))) fs.mkdirSync(path.join(src,keys[j]));
                     console.log(path.join(src,keys[j]));
-                    fs.copyFileSync(path.join(src,dir[i]),path.join(src,keys[j]));
+                    fs.copyFileSync(path.join(src,dir[i]),path.join(src,keys[j],dir[i]));
                     flag = 1;
                     break;
                 }
@@ -37,7 +37,7 @@ function organizeFn(src)
         if(flag == 0 && dir[i].split(".").size > 1 && dir[i].split(".")[1]!="js")
         {
             if(!fs.existsSync(path.join(src,"other"))) fs.mkdirSync(path.join(src,"other"));
-            fs.copyFileSync(path.join(src,dir[i]),path.join(src,"other"));
+            fs.copyFileSync(path.join(src,dir[i]),path.join(src,"other",dir[i]));
             break;
         }
     }
