@@ -4,9 +4,11 @@ let organizeObj = require("./organize");
 let inputArr = process.argv.slice(2);
 let command = inputArr[0];
 let src = process.cwd();
-switch (command) {
+console.log(src);
+switch (command) 
+{
     case "tree":
-        treeObj.treefxn(inputArr[1]);
+        treeObj.treefxn(src);
         break;
     case "organize":
         organizeObj.organizefxn(src);
