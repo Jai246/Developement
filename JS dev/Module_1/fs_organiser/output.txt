@@ -1,0 +1,39 @@
+D:\Developement\JS dev\Module_1\fs_organiser
+app
+temp.exe
+temp.pkg
+tree command executed with path : D:\Developement\JS dev\Module_1\fs_organiser\app
+archives
+temp.7z
+temp.iso
+temp.zip
+tree command executed with path : D:\Developement\JS dev\Module_1\fs_organiser\archives
+documents
+temp.docx
+temp.odg
+temp.odt
+temp.pdf
+temp.xlsx
+tree command executed with path : D:\Developement\JS dev\Module_1\fs_organiser\documents
+help.js
+main.js
+media
+temp.mkv
+temp.mp4
+tree command executed with path : D:\Developement\JS dev\Module_1\fs_organiser\media
+organize.js
+output.txt
+temp.7z
+temp.docx
+temp.exe
+temp.iso
+temp.mkv
+temp.mp4
+temp.odg
+temp.odt
+temp.pdf
+temp.pkg
+temp.xlsx
+temp.zip
+tree.js
+tree command executed with path : D:\Developement\JS dev\Module_1\fs_organiser
