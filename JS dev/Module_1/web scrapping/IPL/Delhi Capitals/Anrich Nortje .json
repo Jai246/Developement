@@ -4,7 +4,7 @@
         "Name": "Anrich Nortje ",
         "Venue": " Dubai (DSC)",
         "Date": " Nov 5 2020",
-        "OpponentTeamName": "Delhi Capitals ",
+        "OpponentTeamName": "Mumbai Indians",
         "Result": "Mum Indians won by 57 runs",
         "Runs": "0",
         "Balls": "0",
@@ -17,7 +17,7 @@
         "Name": "Anrich Nortje ",
         "Venue": " Abu Dhabi",
         "Date": " Sep 29 2020",
-        "OpponentTeamName": "Delhi Capitals ",
+        "OpponentTeamName": "Sunrisers Hyderabad",
         "Result": "Sunrisers won by 15 runs",
         "Runs": "3",
         "Balls": "2",
@@ -28,15 +28,15 @@
     {
         "MyTeamName": "Delhi Capitals",
         "Name": "Anrich Nortje ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 27 2020",
-        "OpponentTeamName": "Delhi Capitals ",
-        "Result": "Sunrisers won by 88 runs",
-        "Runs": "1",
-        "Balls": "3",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 24 2020",
+        "OpponentTeamName": "Kolkata Knight Riders",
+        "Result": "KKR won by 59 runs",
+        "Runs": "0",
+        "Balls": "0",
         "Fours": "0",
         "Sixes": "0",
-        "Sr": "33.33"
+        "Sr": "-"
     },
     {
         "MyTeamName": "Delhi Capitals",
@@ -54,14 +54,14 @@
     {
         "MyTeamName": "Delhi Capitals",
         "Name": "Anrich Nortje ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 24 2020",
-        "OpponentTeamName": "Delhi Capitals ",
-        "Result": "KKR won by 59 runs",
-        "Runs": "0",
-        "Balls": "0",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 27 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad",
+        "Result": "Sunrisers won by 88 runs",
+        "Runs": "1",
+        "Balls": "3",
         "Fours": "0",
         "Sixes": "0",
-        "Sr": "-"
+        "Sr": "33.33"
     }
 ]

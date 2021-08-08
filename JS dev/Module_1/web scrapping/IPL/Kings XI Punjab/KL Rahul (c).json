@@ -3,19 +3,6 @@
         "MyTeamName": "Kings XI Punjab",
         "Name": "KL Rahul (c)",
         "Venue": " Dubai (DSC)",
-        "Date": " Oct 8 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
-        "Result": "Sunrisers won by 69 runs",
-        "Runs": "11",
-        "Balls": "16",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "68.75"
-    },
-    {
-        "MyTeamName": "Kings XI Punjab",
-        "Name": "KL Rahul (c)",
-        "Venue": " Dubai (DSC)",
         "Date": " Oct 4 2020",
         "OpponentTeamName": "Chennai Super Kings ",
         "Result": "Super Kings won by 10 wickets (with 14 balls remaining)",
@@ -30,12 +17,25 @@
         "Name": "KL Rahul (c)",
         "Venue": " Abu Dhabi",
         "Date": " Oct 10 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
+        "OpponentTeamName": "Kolkata Knight Riders",
         "Result": "KKR won by 2 runs",
         "Runs": "74",
         "Balls": "58",
         "Fours": "6",
         "Sixes": "0",
         "Sr": "127.58"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "KL Rahul (c)",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 8 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad",
+        "Result": "Sunrisers won by 69 runs",
+        "Runs": "11",
+        "Balls": "16",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "68.75"
     }
 ]

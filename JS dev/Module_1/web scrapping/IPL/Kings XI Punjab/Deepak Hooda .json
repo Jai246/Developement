@@ -16,14 +16,14 @@
         "MyTeamName": "Kings XI Punjab",
         "Name": "Deepak Hooda ",
         "Venue": " Dubai (DSC)",
-        "Date": " Oct 20 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
-        "Result": "Kings XI won by 5 wickets (with 6 balls remaining)",
-        "Runs": "15",
-        "Balls": "22",
+        "Date": " Oct 18 2020",
+        "OpponentTeamName": "Mumbai Indians",
+        "Result": "Match tied (Kings XI won the one-over eliminator)",
+        "Runs": "23",
+        "Balls": "16",
         "Fours": "1",
-        "Sixes": "0",
-        "Sr": "68.18"
+        "Sixes": "1",
+        "Sr": "143.75"
     },
     {
         "MyTeamName": "Kings XI Punjab",
@@ -42,19 +42,6 @@
         "MyTeamName": "Kings XI Punjab",
         "Name": "Deepak Hooda ",
         "Venue": " Dubai (DSC)",
-        "Date": " Oct 18 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
-        "Result": "Match tied (Kings XI won the one-over eliminator)",
-        "Runs": "23",
-        "Balls": "16",
-        "Fours": "1",
-        "Sixes": "1",
-        "Sr": "143.75"
-    },
-    {
-        "MyTeamName": "Kings XI Punjab",
-        "Name": "Deepak Hooda ",
-        "Venue": " Dubai (DSC)",
         "Date": " Oct 24 2020",
         "OpponentTeamName": "Sunrisers Hyderabad ",
         "Result": "Kings XI won by 12 runs",
@@ -63,5 +50,18 @@
         "Fours": "0",
         "Sixes": "0",
         "Sr": "0.00"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 20 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Kings XI won by 5 wickets (with 6 balls remaining)",
+        "Runs": "15",
+        "Balls": "22",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "68.18"
     }
 ]

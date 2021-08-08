@@ -3,21 +3,8 @@
         "MyTeamName": "Sunrisers Hyderabad",
         "Name": "Wriddhiman Saha †",
         "Venue": " Sharjah",
-        "Date": " Oct 31 2020",
-        "OpponentTeamName": "Sunrisers Hyderabad ",
-        "Result": "Sunrisers won by 5 wickets (with 35 balls remaining)",
-        "Runs": "39",
-        "Balls": "32",
-        "Fours": "4",
-        "Sixes": "1",
-        "Sr": "121.87"
-    },
-    {
-        "MyTeamName": "Sunrisers Hyderabad",
-        "Name": "Wriddhiman Saha †",
-        "Venue": " Sharjah",
         "Date": " Nov 3 2020",
-        "OpponentTeamName": "Sunrisers Hyderabad ",
+        "OpponentTeamName": "Mumbai Indians",
         "Result": "Sunrisers won by 10 wickets (with 17 balls remaining)",
         "Runs": "58",
         "Balls": "45",
@@ -28,15 +15,15 @@
     {
         "MyTeamName": "Sunrisers Hyderabad",
         "Name": "Wriddhiman Saha †",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 27 2020",
-        "OpponentTeamName": "Delhi Capitals ",
-        "Result": "Sunrisers won by 88 runs",
-        "Runs": "87",
-        "Balls": "45",
-        "Fours": "12",
-        "Sixes": "2",
-        "Sr": "193.33"
+        "Venue": " Sharjah",
+        "Date": " Oct 31 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore",
+        "Result": "Sunrisers won by 5 wickets (with 35 balls remaining)",
+        "Runs": "39",
+        "Balls": "32",
+        "Fours": "4",
+        "Sixes": "1",
+        "Sr": "121.87"
     },
     {
         "MyTeamName": "Sunrisers Hyderabad",
@@ -50,5 +37,18 @@
         "Fours": "1",
         "Sixes": "1",
         "Sr": "96.77"
+    },
+    {
+        "MyTeamName": "Sunrisers Hyderabad",
+        "Name": "Wriddhiman Saha †",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 27 2020",
+        "OpponentTeamName": "Delhi Capitals ",
+        "Result": "Sunrisers won by 88 runs",
+        "Runs": "87",
+        "Balls": "45",
+        "Fours": "12",
+        "Sixes": "2",
+        "Sr": "193.33"
     }
 ]

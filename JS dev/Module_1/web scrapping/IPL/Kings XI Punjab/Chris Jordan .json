@@ -15,35 +15,9 @@
     {
         "MyTeamName": "Kings XI Punjab",
         "Name": "Chris Jordan ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 10 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
-        "Result": "KKR won by 2 runs",
-        "Runs": "0",
-        "Balls": "0",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "-"
-    },
-    {
-        "MyTeamName": "Kings XI Punjab",
-        "Name": "Chris Jordan ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Sep 20 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
-        "Result": "Match tied (Capitals won the one-over eliminator)",
-        "Runs": "5",
-        "Balls": "6",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "83.33"
-    },
-    {
-        "MyTeamName": "Kings XI Punjab",
-        "Name": "Chris Jordan ",
         "Venue": " Dubai (DSC)",
         "Date": " Oct 18 2020",
-        "OpponentTeamName": "Kings XI Punjab ",
+        "OpponentTeamName": "Mumbai Indians",
         "Result": "Match tied (Kings XI won the one-over eliminator)",
         "Runs": "13",
         "Balls": "8",
@@ -63,5 +37,31 @@
         "Fours": "0",
         "Sixes": "0",
         "Sr": "58.33"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Chris Jordan ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 10 2020",
+        "OpponentTeamName": "Kolkata Knight Riders",
+        "Result": "KKR won by 2 runs",
+        "Runs": "0",
+        "Balls": "0",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "-"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Chris Jordan ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Sep 20 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Match tied (Capitals won the one-over eliminator)",
+        "Runs": "5",
+        "Balls": "6",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "83.33"
     }
 ]

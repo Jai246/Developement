@@ -50,7 +50,7 @@ function process(linkScore) {
                     "Name": selectTool(td[0]).text(),
                     "Venue": moreDetails[1] + "",
                     "Date": moreDetails[2] + "",
-                    "OpponentTeamName": (Tname == selectTool(teamName[1]).text().split("INNINGS")[0]) ? selectTool(teamName[0]).text().split("INNINGS")[0] : selectTool(teamName[1]).text().split("INNINGS")[0],
+                    "OpponentTeamName": (Tname == selectTool(teamName[1]).text().split("INNINGS")[0].trim()) ? selectTool(teamName[0]).text().split("INNINGS")[0].trim() : selectTool(teamName[1]).text().split("INNINGS")[0],
                     "Result": Result + "",
                     "Runs": selectTool(td[2]).text() + "",
                     "Balls": selectTool(td[3]).text() + "",

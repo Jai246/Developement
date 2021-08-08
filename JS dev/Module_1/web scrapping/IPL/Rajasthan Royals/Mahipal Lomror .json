@@ -2,15 +2,15 @@
     {
         "MyTeamName": "Rajasthan Royals",
         "Name": "Mahipal Lomror ",
-        "Venue": " Sharjah",
-        "Date": " Oct 9 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Capitals won by 46 runs",
-        "Runs": "1",
-        "Balls": "2",
-        "Fours": "0",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 6 2020",
+        "OpponentTeamName": "Mumbai Indians",
+        "Result": "Mum Indians won by 57 runs",
+        "Runs": "11",
+        "Balls": "13",
+        "Fours": "1",
         "Sixes": "0",
-        "Sr": "50.00"
+        "Sr": "84.61"
     },
     {
         "MyTeamName": "Rajasthan Royals",
@@ -28,14 +28,14 @@
     {
         "MyTeamName": "Rajasthan Royals",
         "Name": "Mahipal Lomror ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 6 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Mum Indians won by 57 runs",
-        "Runs": "11",
-        "Balls": "13",
-        "Fours": "1",
+        "Venue": " Sharjah",
+        "Date": " Oct 9 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Capitals won by 46 runs",
+        "Runs": "1",
+        "Balls": "2",
+        "Fours": "0",
         "Sixes": "0",
-        "Sr": "84.61"
+        "Sr": "50.00"
     }
 ]

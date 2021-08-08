@@ -2,6 +2,19 @@
     {
         "MyTeamName": "Royal Challengers Bangalore",
         "Name": "Josh Philippe ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 28 2020",
+        "OpponentTeamName": "Mumbai Indians ",
+        "Result": "Mum Indians won by 5 wickets (with 5 balls remaining)",
+        "Runs": "33",
+        "Balls": "24",
+        "Fours": "4",
+        "Sixes": "1",
+        "Sr": "137.50"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Josh Philippe ",
         "Venue": " Sharjah",
         "Date": " Oct 31 2020",
         "OpponentTeamName": "Sunrisers Hyderabad ",
@@ -24,18 +37,5 @@
         "Fours": "1",
         "Sixes": "0",
         "Sr": "70.58"
-    },
-    {
-        "MyTeamName": "Royal Challengers Bangalore",
-        "Name": "Josh Philippe ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 28 2020",
-        "OpponentTeamName": "Mumbai Indians ",
-        "Result": "Mum Indians won by 5 wickets (with 5 balls remaining)",
-        "Runs": "33",
-        "Balls": "24",
-        "Fours": "4",
-        "Sixes": "1",
-        "Sr": "137.50"
     }
 ]

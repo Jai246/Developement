@@ -3,6 +3,19 @@
         "MyTeamName": "Kolkata Knight Riders",
         "Name": "Varun Chakravarthy ",
         "Venue": " Sharjah",
+        "Date": " Oct 12 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore",
+        "Result": "RCB won by 82 runs",
+        "Runs": "7",
+        "Balls": "10",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "70.00"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Varun Chakravarthy ",
+        "Venue": " Sharjah",
         "Date": " Oct 26 2020",
         "OpponentTeamName": "Kings XI Punjab ",
         "Result": "Kings XI won by 8 wickets (with 7 balls remaining)",
@@ -11,19 +24,6 @@
         "Fours": "0",
         "Sixes": "0",
         "Sr": "50.00"
-    },
-    {
-        "MyTeamName": "Kolkata Knight Riders",
-        "Name": "Varun Chakravarthy ",
-        "Venue": " Sharjah",
-        "Date": " Oct 12 2020",
-        "OpponentTeamName": "Kolkata Knight Riders ",
-        "Result": "RCB won by 82 runs",
-        "Runs": "7",
-        "Balls": "10",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "70.00"
     },
     {
         "MyTeamName": "Kolkata Knight Riders",

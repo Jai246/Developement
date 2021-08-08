@@ -2,19 +2,6 @@
     {
         "MyTeamName": "Delhi Capitals",
         "Name": "Ravichandran Ashwin ",
-        "Venue": " Sharjah",
-        "Date": " Oct 9 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Capitals won by 46 runs",
-        "Runs": "0",
-        "Balls": "1",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "0.00"
-    },
-    {
-        "MyTeamName": "Delhi Capitals",
-        "Name": "Ravichandran Ashwin ",
         "Venue": " Dubai (DSC)",
         "Date": " Oct 31 2020",
         "OpponentTeamName": "Mumbai Indians ",
@@ -28,28 +15,15 @@
     {
         "MyTeamName": "Delhi Capitals",
         "Name": "Ravichandran Ashwin ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 14 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Capitals won by 13 runs",
-        "Runs": "0",
-        "Balls": "0",
-        "Fours": "0",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 24 2020",
+        "OpponentTeamName": "Kolkata Knight Riders",
+        "Result": "KKR won by 59 runs",
+        "Runs": "14",
+        "Balls": "13",
+        "Fours": "2",
         "Sixes": "0",
-        "Sr": "-"
-    },
-    {
-        "MyTeamName": "Delhi Capitals",
-        "Name": "Ravichandran Ashwin ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 27 2020",
-        "OpponentTeamName": "Delhi Capitals ",
-        "Result": "Sunrisers won by 88 runs",
-        "Runs": "7",
-        "Balls": "5",
-        "Fours": "1",
-        "Sixes": "0",
-        "Sr": "140.00"
+        "Sr": "107.69"
     },
     {
         "MyTeamName": "Delhi Capitals",
@@ -67,14 +41,40 @@
     {
         "MyTeamName": "Delhi Capitals",
         "Name": "Ravichandran Ashwin ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 24 2020",
-        "OpponentTeamName": "Delhi Capitals ",
-        "Result": "KKR won by 59 runs",
-        "Runs": "14",
-        "Balls": "13",
-        "Fours": "2",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 27 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad",
+        "Result": "Sunrisers won by 88 runs",
+        "Runs": "7",
+        "Balls": "5",
+        "Fours": "1",
         "Sixes": "0",
-        "Sr": "107.69"
+        "Sr": "140.00"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Sharjah",
+        "Date": " Oct 9 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Capitals won by 46 runs",
+        "Runs": "0",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 14 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Capitals won by 13 runs",
+        "Runs": "0",
+        "Balls": "0",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "-"
     }
 ]

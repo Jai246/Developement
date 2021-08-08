@@ -2,22 +2,22 @@
     {
         "MyTeamName": "Rajasthan Royals",
         "Name": "Kartik Tyagi ",
-        "Venue": " Sharjah",
-        "Date": " Oct 9 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Capitals won by 46 runs",
-        "Runs": "2",
-        "Balls": "3",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 6 2020",
+        "OpponentTeamName": "Mumbai Indians",
+        "Result": "Mum Indians won by 57 runs",
+        "Runs": "0",
+        "Balls": "0",
         "Fours": "0",
         "Sixes": "0",
-        "Sr": "66.66"
+        "Sr": "-"
     },
     {
         "MyTeamName": "Rajasthan Royals",
         "Name": "Kartik Tyagi ",
         "Venue": " Dubai (DSC)",
         "Date": " Nov 1 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
+        "OpponentTeamName": "Kolkata Knight Riders",
         "Result": "KKR won by 60 runs",
         "Runs": "2",
         "Balls": "3",
@@ -28,14 +28,14 @@
     {
         "MyTeamName": "Rajasthan Royals",
         "Name": "Kartik Tyagi ",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 6 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "Mum Indians won by 57 runs",
-        "Runs": "0",
-        "Balls": "0",
+        "Venue": " Sharjah",
+        "Date": " Oct 9 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Capitals won by 46 runs",
+        "Runs": "2",
+        "Balls": "3",
         "Fours": "0",
         "Sixes": "0",
-        "Sr": "-"
+        "Sr": "66.66"
     }
 ]

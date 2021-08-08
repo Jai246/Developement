@@ -3,26 +3,26 @@
         "MyTeamName": "Royal Challengers Bangalore",
         "Name": "Yuzvendra Chahal ",
         "Venue": " Dubai (DSC)",
-        "Date": " Oct 5 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
-        "Result": "Capitals won by 59 runs",
-        "Runs": "0",
-        "Balls": "0",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "-"
-    },
-    {
-        "MyTeamName": "Royal Challengers Bangalore",
-        "Name": "Yuzvendra Chahal ",
-        "Venue": " Dubai (DSC)",
         "Date": " Sep 24 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "OpponentTeamName": "Kings XI Punjab",
         "Result": "Kings XI won by 97 runs",
         "Runs": "1",
         "Balls": "3",
         "Fours": "0",
         "Sixes": "0",
         "Sr": "33.33"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Yuzvendra Chahal ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 5 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Capitals won by 59 runs",
+        "Runs": "0",
+        "Balls": "0",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "-"
     }
 ]

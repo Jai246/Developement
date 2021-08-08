@@ -3,6 +3,19 @@
         "MyTeamName": "Chennai Super Kings",
         "Name": "Dwayne Bravo ",
         "Venue": " Dubai (DSC)",
+        "Date": " Oct 10 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore",
+        "Result": "RCB won by 37 runs",
+        "Runs": "7",
+        "Balls": "5",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "140.00"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Dwayne Bravo ",
+        "Venue": " Dubai (DSC)",
         "Date": " Oct 13 2020",
         "OpponentTeamName": "Sunrisers Hyderabad ",
         "Result": "Super Kings won by 20 runs",
@@ -11,18 +24,5 @@
         "Fours": "0",
         "Sixes": "0",
         "Sr": "0.00"
-    },
-    {
-        "MyTeamName": "Chennai Super Kings",
-        "Name": "Dwayne Bravo ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 10 2020",
-        "OpponentTeamName": "Chennai Super Kings ",
-        "Result": "RCB won by 37 runs",
-        "Runs": "7",
-        "Balls": "5",
-        "Fours": "0",
-        "Sixes": "0",
-        "Sr": "140.00"
     }
 ]

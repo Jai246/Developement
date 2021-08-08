@@ -2,19 +2,6 @@
     {
         "MyTeamName": "Royal Challengers Bangalore",
         "Name": "Navdeep Saini ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 5 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
-        "Result": "Capitals won by 59 runs",
-        "Runs": "12",
-        "Balls": "12",
-        "Fours": "1",
-        "Sixes": "0",
-        "Sr": "100.00"
-    },
-    {
-        "MyTeamName": "Royal Challengers Bangalore",
-        "Name": "Navdeep Saini ",
         "Venue": " Abu Dhabi",
         "Date": " Nov 6 2020",
         "OpponentTeamName": "Sunrisers Hyderabad ",
@@ -30,12 +17,25 @@
         "Name": "Navdeep Saini ",
         "Venue": " Dubai (DSC)",
         "Date": " Sep 24 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "OpponentTeamName": "Kings XI Punjab",
         "Result": "Kings XI won by 97 runs",
         "Runs": "6",
         "Balls": "7",
         "Fours": "1",
         "Sixes": "0",
         "Sr": "85.71"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Navdeep Saini ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 5 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Capitals won by 59 runs",
+        "Runs": "12",
+        "Balls": "12",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "100.00"
     }
 ]

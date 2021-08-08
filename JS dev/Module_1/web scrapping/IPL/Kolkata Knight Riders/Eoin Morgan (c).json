@@ -15,45 +15,6 @@
     {
         "MyTeamName": "Kolkata Knight Riders",
         "Name": "Eoin Morgan (c)",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 29 2020",
-        "OpponentTeamName": "Chennai Super Kings ",
-        "Result": "Super Kings won by 6 wickets",
-        "Runs": "15",
-        "Balls": "12",
-        "Fours": "2",
-        "Sixes": "0",
-        "Sr": "125.00"
-    },
-    {
-        "MyTeamName": "Kolkata Knight Riders",
-        "Name": "Eoin Morgan (c)",
-        "Venue": " Dubai (DSC)",
-        "Date": " Nov 1 2020",
-        "OpponentTeamName": "Rajasthan Royals ",
-        "Result": "KKR won by 60 runs",
-        "Runs": "68",
-        "Balls": "35",
-        "Fours": "5",
-        "Sixes": "6",
-        "Sr": "194.28"
-    },
-    {
-        "MyTeamName": "Kolkata Knight Riders",
-        "Name": "Eoin Morgan (c)",
-        "Venue": " Abu Dhabi",
-        "Date": " Oct 21 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
-        "Result": "RCB won by 8 wickets (with 39 balls remaining)",
-        "Runs": "30",
-        "Balls": "34",
-        "Fours": "3",
-        "Sixes": "1",
-        "Sr": "88.23"
-    },
-    {
-        "MyTeamName": "Kolkata Knight Riders",
-        "Name": "Eoin Morgan (c)",
         "Venue": " Abu Dhabi",
         "Date": " Oct 16 2020",
         "OpponentTeamName": "Mumbai Indians ",
@@ -80,6 +41,19 @@
     {
         "MyTeamName": "Kolkata Knight Riders",
         "Name": "Eoin Morgan (c)",
+        "Venue": " Dubai (DSC)",
+        "Date": " Nov 1 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "KKR won by 60 runs",
+        "Runs": "68",
+        "Balls": "35",
+        "Fours": "5",
+        "Sixes": "6",
+        "Sr": "194.28"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Eoin Morgan (c)",
         "Venue": " Abu Dhabi",
         "Date": " Oct 24 2020",
         "OpponentTeamName": "Delhi Capitals ",
@@ -89,5 +63,31 @@
         "Fours": "2",
         "Sixes": "1",
         "Sr": "188.88"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Eoin Morgan (c)",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 21 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "Result": "RCB won by 8 wickets (with 39 balls remaining)",
+        "Runs": "30",
+        "Balls": "34",
+        "Fours": "3",
+        "Sixes": "1",
+        "Sr": "88.23"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Eoin Morgan (c)",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 29 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Super Kings won by 6 wickets",
+        "Runs": "15",
+        "Balls": "12",
+        "Fours": "2",
+        "Sixes": "0",
+        "Sr": "125.00"
     }
 ]

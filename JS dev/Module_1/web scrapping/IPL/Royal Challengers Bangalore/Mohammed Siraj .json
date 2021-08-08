@@ -15,19 +15,6 @@
     {
         "MyTeamName": "Royal Challengers Bangalore",
         "Name": "Mohammed Siraj ",
-        "Venue": " Dubai (DSC)",
-        "Date": " Oct 5 2020",
-        "OpponentTeamName": "Royal Challengers Bangalore ",
-        "Result": "Capitals won by 59 runs",
-        "Runs": "5",
-        "Balls": "4",
-        "Fours": "1",
-        "Sixes": "0",
-        "Sr": "125.00"
-    },
-    {
-        "MyTeamName": "Royal Challengers Bangalore",
-        "Name": "Mohammed Siraj ",
         "Venue": " Abu Dhabi",
         "Date": " Nov 6 2020",
         "OpponentTeamName": "Sunrisers Hyderabad ",
@@ -37,5 +24,18 @@
         "Fours": "1",
         "Sixes": "0",
         "Sr": "142.85"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Mohammed Siraj ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 5 2020",
+        "OpponentTeamName": "Delhi Capitals",
+        "Result": "Capitals won by 59 runs",
+        "Runs": "5",
+        "Balls": "4",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "125.00"
     }
 ]
