@@ -1,1 +1,15 @@
-[{"MyTeamName":"Kings XI Punjab","Name":"Nicholas Pooran †","Venue":" Dubai (DSC)","Date":" Oct 4 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Super Kings won by 10 wickets (with 14 balls remaining)","Runs":"33","Balls":"17","Fours":"1","Sixes":"3","Sr":"194.11"}]
+[
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Nicholas Pooran †",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 4 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Super Kings won by 10 wickets (with 14 balls remaining)",
+        "Runs": "33",
+        "Balls": "17",
+        "Fours": "1",
+        "Sixes": "3",
+        "Sr": "194.11"
+    }
+]

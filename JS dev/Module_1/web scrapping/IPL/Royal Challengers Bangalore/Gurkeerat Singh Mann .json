@@ -1,1 +1,67 @@
-[{"MyTeamName":"Royal Challengers Bangalore","Name":"Gurkeerat Singh Mann ","Venue":" Sharjah","Date":" Oct 31 2020","OpponentTeamName":"Sunrisers Hyderabad ","Result":"Sunrisers won by 5 wickets (with 35 balls remaining)","Runs":"15","Balls":"24","Fours":"1","Sixes":"0","Sr":"62.50"},{"MyTeamName":"Royal Challengers Bangalore","Name":"Gurkeerat Singh Mann ","Venue":" Dubai (DSC)","Date":" Oct 25 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Super Kings won by 8 wickets (with 8 balls remaining)","Runs":"2","Balls":"2","Fours":"0","Sixes":"0","Sr":"100.00"},{"MyTeamName":"Royal Challengers Bangalore","Name":"Gurkeerat Singh Mann ","Venue":" Abu Dhabi","Date":" Oct 28 2020","OpponentTeamName":"Mumbai Indians ","Result":"Mum Indians won by 5 wickets (with 5 balls remaining)","Runs":"14","Balls":"11","Fours":"2","Sixes":"0","Sr":"127.27"},{"MyTeamName":"Royal Challengers Bangalore","Name":"Gurkeerat Singh Mann ","Venue":" Abu Dhabi","Date":" Oct 21 2020","OpponentTeamName":"Royal Challengers Bangalore ","Result":"RCB won by 8 wickets (with 39 balls remaining)","Runs":"21","Balls":"26","Fours":"4","Sixes":"0","Sr":"80.76"},{"MyTeamName":"Royal Challengers Bangalore","Name":"Gurkeerat Singh Mann ","Venue":" Dubai (DSC)","Date":" Oct 17 2020","OpponentTeamName":"Royal Challengers Bangalore ","Result":"RCB won by 7 wickets (with 2 balls remaining)","Runs":"19","Balls":"17","Fours":"1","Sixes":"0","Sr":"111.76"}]
+[
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Gurkeerat Singh Mann ",
+        "Venue": " Sharjah",
+        "Date": " Oct 31 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad ",
+        "Result": "Sunrisers won by 5 wickets (with 35 balls remaining)",
+        "Runs": "15",
+        "Balls": "24",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "62.50"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Gurkeerat Singh Mann ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 25 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Super Kings won by 8 wickets (with 8 balls remaining)",
+        "Runs": "2",
+        "Balls": "2",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Gurkeerat Singh Mann ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 28 2020",
+        "OpponentTeamName": "Mumbai Indians ",
+        "Result": "Mum Indians won by 5 wickets (with 5 balls remaining)",
+        "Runs": "14",
+        "Balls": "11",
+        "Fours": "2",
+        "Sixes": "0",
+        "Sr": "127.27"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Gurkeerat Singh Mann ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 21 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "Result": "RCB won by 8 wickets (with 39 balls remaining)",
+        "Runs": "21",
+        "Balls": "26",
+        "Fours": "4",
+        "Sixes": "0",
+        "Sr": "80.76"
+    },
+    {
+        "MyTeamName": "Royal Challengers Bangalore",
+        "Name": "Gurkeerat Singh Mann ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 17 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "Result": "RCB won by 7 wickets (with 2 balls remaining)",
+        "Runs": "19",
+        "Balls": "17",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "111.76"
+    }
+]

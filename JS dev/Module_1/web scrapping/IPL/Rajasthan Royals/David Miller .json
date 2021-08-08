@@ -1,1 +1,15 @@
-[{"MyTeamName":"Rajasthan Royals","Name":"David Miller ","Venue":" Sharjah","Date":" Sep 22 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Royals won by 16 runs","Runs":"0","Balls":"0","Fours":"0","Sixes":"0","Sr":"-"}]
+[
+    {
+        "MyTeamName": "Rajasthan Royals",
+        "Name": "David Miller ",
+        "Venue": " Sharjah",
+        "Date": " Sep 22 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Royals won by 16 runs",
+        "Runs": "0",
+        "Balls": "0",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "-"
+    }
+]

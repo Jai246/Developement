@@ -1,1 +1,15 @@
-[{"MyTeamName":"Sunrisers Hyderabad","Name":"Bhuvneshwar Kumar ","Venue":" Dubai (DSC)","Date":" Sep 21 2020","OpponentTeamName":"Sunrisers Hyderabad ","Result":"RCB won by 10 runs","Runs":"0","Balls":"2","Fours":"0","Sixes":"0","Sr":"0.00"}]
+[
+    {
+        "MyTeamName": "Sunrisers Hyderabad",
+        "Name": "Bhuvneshwar Kumar ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Sep 21 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad ",
+        "Result": "RCB won by 10 runs",
+        "Runs": "0",
+        "Balls": "2",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    }
+]

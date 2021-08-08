@@ -1,1 +1,80 @@
-[{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Sharjah","Date":" Oct 26 2020","OpponentTeamName":"Kings XI Punjab ","Result":"Kings XI won by 8 wickets (with 7 balls remaining)","Runs":"6","Balls":"13","Fours":"0","Sixes":"0","Sr":"46.15"},{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Sharjah","Date":" Oct 3 2020","OpponentTeamName":"Kolkata Knight Riders ","Result":"Capitals won by 18 runs","Runs":"3","Balls":"3","Fours":"0","Sixes":"0","Sr":"100.00"},{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Dubai (DSC)","Date":" Nov 1 2020","OpponentTeamName":"Rajasthan Royals ","Result":"KKR won by 60 runs","Runs":"1","Balls":"1","Fours":"0","Sixes":"0","Sr":"100.00"},{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Sharjah","Date":" Oct 12 2020","OpponentTeamName":"Kolkata Knight Riders ","Result":"RCB won by 82 runs","Runs":"4","Balls":"7","Fours":"0","Sixes":"0","Sr":"57.14"},{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Dubai (DSC)","Date":" Sep 30 2020","OpponentTeamName":"Rajasthan Royals ","Result":"KKR won by 37 runs","Runs":"8","Balls":"5","Fours":"1","Sixes":"0","Sr":"160.00"},{"MyTeamName":"Kolkata Knight Riders","Name":"Kamlesh Nagarkoti ","Venue":" Abu Dhabi","Date":" Oct 7 2020","OpponentTeamName":"Chennai Super Kings ","Result":"KKR won by 10 runs","Runs":"0","Balls":"2","Fours":"0","Sixes":"0","Sr":"0.00"}]
+[
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Sharjah",
+        "Date": " Oct 26 2020",
+        "OpponentTeamName": "Kings XI Punjab ",
+        "Result": "Kings XI won by 8 wickets (with 7 balls remaining)",
+        "Runs": "6",
+        "Balls": "13",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "46.15"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Sharjah",
+        "Date": " Oct 3 2020",
+        "OpponentTeamName": "Kolkata Knight Riders ",
+        "Result": "Capitals won by 18 runs",
+        "Runs": "3",
+        "Balls": "3",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Nov 1 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "KKR won by 60 runs",
+        "Runs": "1",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Sharjah",
+        "Date": " Oct 12 2020",
+        "OpponentTeamName": "Kolkata Knight Riders ",
+        "Result": "RCB won by 82 runs",
+        "Runs": "4",
+        "Balls": "7",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "57.14"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Sep 30 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "KKR won by 37 runs",
+        "Runs": "8",
+        "Balls": "5",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "160.00"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Kamlesh Nagarkoti ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 7 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "KKR won by 10 runs",
+        "Runs": "0",
+        "Balls": "2",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    }
+]

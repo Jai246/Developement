@@ -5,8 +5,7 @@ let inputArr = process.argv.slice(2);
 let command = inputArr[0];
 let src = process.cwd();
 console.log(src);
-switch (command) 
-{
+switch (command) {
     case "tree":
         treeObj.treefxn(src);
         break;

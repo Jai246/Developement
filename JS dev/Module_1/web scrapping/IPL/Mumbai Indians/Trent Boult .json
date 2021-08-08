@@ -1,1 +1,15 @@
-[{"MyTeamName":"Mumbai Indians","Name":"Trent Boult ","Venue":" Abu Dhabi","Date":" Sep 19 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Super Kings won by 5 wickets (with 4 balls remaining)","Runs":"0","Balls":"1","Fours":"0","Sixes":"0","Sr":"0.00"}]
+[
+    {
+        "MyTeamName": "Mumbai Indians",
+        "Name": "Trent Boult ",
+        "Venue": " Abu Dhabi",
+        "Date": " Sep 19 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Super Kings won by 5 wickets (with 4 balls remaining)",
+        "Runs": "0",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    }
+]

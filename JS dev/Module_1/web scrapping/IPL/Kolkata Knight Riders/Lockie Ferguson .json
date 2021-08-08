@@ -1,1 +1,28 @@
-[{"MyTeamName":"Kolkata Knight Riders","Name":"Lockie Ferguson ","Venue":" Sharjah","Date":" Oct 26 2020","OpponentTeamName":"Kings XI Punjab ","Result":"Kings XI won by 8 wickets (with 7 balls remaining)","Runs":"24","Balls":"13","Fours":"3","Sixes":"1","Sr":"184.61"},{"MyTeamName":"Kolkata Knight Riders","Name":"Lockie Ferguson ","Venue":" Abu Dhabi","Date":" Oct 21 2020","OpponentTeamName":"Royal Challengers Bangalore ","Result":"RCB won by 8 wickets (with 39 balls remaining)","Runs":"19","Balls":"16","Fours":"1","Sixes":"0","Sr":"118.75"}]
+[
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Lockie Ferguson ",
+        "Venue": " Sharjah",
+        "Date": " Oct 26 2020",
+        "OpponentTeamName": "Kings XI Punjab ",
+        "Result": "Kings XI won by 8 wickets (with 7 balls remaining)",
+        "Runs": "24",
+        "Balls": "13",
+        "Fours": "3",
+        "Sixes": "1",
+        "Sr": "184.61"
+    },
+    {
+        "MyTeamName": "Kolkata Knight Riders",
+        "Name": "Lockie Ferguson ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 21 2020",
+        "OpponentTeamName": "Royal Challengers Bangalore ",
+        "Result": "RCB won by 8 wickets (with 39 balls remaining)",
+        "Runs": "19",
+        "Balls": "16",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "118.75"
+    }
+]

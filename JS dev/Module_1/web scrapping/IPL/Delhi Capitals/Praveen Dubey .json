@@ -1,1 +1,15 @@
-[{"MyTeamName":"Delhi Capitals","Name":"Praveen Dubey ","Venue":" Dubai (DSC)","Date":" Oct 31 2020","OpponentTeamName":"Mumbai Indians ","Result":"Mum Indians won by 9 wickets (with 34 balls remaining)","Runs":"7","Balls":"13","Fours":"0","Sixes":"0","Sr":"53.84"}]
+[
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Praveen Dubey ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 31 2020",
+        "OpponentTeamName": "Mumbai Indians ",
+        "Result": "Mum Indians won by 9 wickets (with 34 balls remaining)",
+        "Runs": "7",
+        "Balls": "13",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "53.84"
+    }
+]

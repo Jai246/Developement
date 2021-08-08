@@ -1,1 +1,28 @@
-[{"MyTeamName":"Chennai Super Kings","Name":"Shardul Thakur ","Venue":" Sharjah","Date":" Oct 23 2020","OpponentTeamName":"Mumbai Indians ","Result":"Mum Indians won by 10 wickets (with 46 balls remaining)","Runs":"11","Balls":"20","Fours":"0","Sixes":"0","Sr":"55.00"},{"MyTeamName":"Chennai Super Kings","Name":"Shardul Thakur ","Venue":" Dubai (DSC)","Date":" Oct 10 2020","OpponentTeamName":"Chennai Super Kings ","Result":"RCB won by 37 runs","Runs":"1","Balls":"1","Fours":"0","Sixes":"0","Sr":"100.00"}]
+[
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Shardul Thakur ",
+        "Venue": " Sharjah",
+        "Date": " Oct 23 2020",
+        "OpponentTeamName": "Mumbai Indians ",
+        "Result": "Mum Indians won by 10 wickets (with 46 balls remaining)",
+        "Runs": "11",
+        "Balls": "20",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "55.00"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Shardul Thakur ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 10 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "RCB won by 37 runs",
+        "Runs": "1",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    }
+]

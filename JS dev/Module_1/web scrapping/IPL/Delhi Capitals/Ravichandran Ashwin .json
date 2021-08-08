@@ -1,1 +1,80 @@
-[{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Sharjah","Date":" Oct 9 2020","OpponentTeamName":"Rajasthan Royals ","Result":"Capitals won by 46 runs","Runs":"0","Balls":"1","Fours":"0","Sixes":"0","Sr":"0.00"},{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Dubai (DSC)","Date":" Oct 31 2020","OpponentTeamName":"Mumbai Indians ","Result":"Mum Indians won by 9 wickets (with 34 balls remaining)","Runs":"12","Balls":"9","Fours":"0","Sixes":"1","Sr":"133.33"},{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Dubai (DSC)","Date":" Oct 14 2020","OpponentTeamName":"Rajasthan Royals ","Result":"Capitals won by 13 runs","Runs":"0","Balls":"0","Fours":"0","Sixes":"0","Sr":"-"},{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Dubai (DSC)","Date":" Oct 27 2020","OpponentTeamName":"Delhi Capitals ","Result":"Sunrisers won by 88 runs","Runs":"7","Balls":"5","Fours":"1","Sixes":"0","Sr":"140.00"},{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Dubai (DSC)","Date":" Sep 20 2020","OpponentTeamName":"Kings XI Punjab ","Result":"Match tied (Capitals won the one-over eliminator)","Runs":"4","Balls":"6","Fours":"0","Sixes":"0","Sr":"66.66"},{"MyTeamName":"Delhi Capitals","Name":"Ravichandran Ashwin ","Venue":" Abu Dhabi","Date":" Oct 24 2020","OpponentTeamName":"Delhi Capitals ","Result":"KKR won by 59 runs","Runs":"14","Balls":"13","Fours":"2","Sixes":"0","Sr":"107.69"}]
+[
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Sharjah",
+        "Date": " Oct 9 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Capitals won by 46 runs",
+        "Runs": "0",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 31 2020",
+        "OpponentTeamName": "Mumbai Indians ",
+        "Result": "Mum Indians won by 9 wickets (with 34 balls remaining)",
+        "Runs": "12",
+        "Balls": "9",
+        "Fours": "0",
+        "Sixes": "1",
+        "Sr": "133.33"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 14 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Capitals won by 13 runs",
+        "Runs": "0",
+        "Balls": "0",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "-"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 27 2020",
+        "OpponentTeamName": "Delhi Capitals ",
+        "Result": "Sunrisers won by 88 runs",
+        "Runs": "7",
+        "Balls": "5",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "140.00"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Sep 20 2020",
+        "OpponentTeamName": "Kings XI Punjab ",
+        "Result": "Match tied (Capitals won the one-over eliminator)",
+        "Runs": "4",
+        "Balls": "6",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "66.66"
+    },
+    {
+        "MyTeamName": "Delhi Capitals",
+        "Name": "Ravichandran Ashwin ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 24 2020",
+        "OpponentTeamName": "Delhi Capitals ",
+        "Result": "KKR won by 59 runs",
+        "Runs": "14",
+        "Balls": "13",
+        "Fours": "2",
+        "Sixes": "0",
+        "Sr": "107.69"
+    }
+]

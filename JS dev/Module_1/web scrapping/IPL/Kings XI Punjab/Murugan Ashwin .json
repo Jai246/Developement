@@ -1,1 +1,15 @@
-[{"MyTeamName":"Kings XI Punjab","Name":"Murugan Ashwin ","Venue":" Dubai (DSC)","Date":" Oct 24 2020","OpponentTeamName":"Sunrisers Hyderabad ","Result":"Kings XI won by 12 runs","Runs":"4","Balls":"4","Fours":"0","Sixes":"0","Sr":"100.00"}]
+[
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Murugan Ashwin ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 24 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad ",
+        "Result": "Kings XI won by 12 runs",
+        "Runs": "4",
+        "Balls": "4",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    }
+]

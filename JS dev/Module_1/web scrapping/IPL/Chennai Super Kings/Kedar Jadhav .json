@@ -1,1 +1,67 @@
-[{"MyTeamName":"Chennai Super Kings","Name":"Kedar Jadhav ","Venue":" Dubai (DSC)","Date":" Oct 2 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Sunrisers won by 7 runs","Runs":"3","Balls":"10","Fours":"0","Sixes":"0","Sr":"30.00"},{"MyTeamName":"Chennai Super Kings","Name":"Kedar Jadhav ","Venue":" Abu Dhabi","Date":" Oct 7 2020","OpponentTeamName":"Chennai Super Kings ","Result":"KKR won by 10 runs","Runs":"7","Balls":"12","Fours":"1","Sixes":"0","Sr":"58.33"},{"MyTeamName":"Chennai Super Kings","Name":"Kedar Jadhav ","Venue":" Sharjah","Date":" Sep 22 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Royals won by 16 runs","Runs":"22","Balls":"16","Fours":"3","Sixes":"0","Sr":"137.50"},{"MyTeamName":"Chennai Super Kings","Name":"Kedar Jadhav ","Venue":" Abu Dhabi","Date":" Oct 19 2020","OpponentTeamName":"Rajasthan Royals ","Result":"Royals won by 7 wickets (with 15 balls remaining)","Runs":"4","Balls":"7","Fours":"0","Sixes":"0","Sr":"57.14"},{"MyTeamName":"Chennai Super Kings","Name":"Kedar Jadhav ","Venue":" Dubai (DSC)","Date":" Sep 25 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Capitals won by 44 runs","Runs":"26","Balls":"21","Fours":"3","Sixes":"0","Sr":"123.80"}]
+[
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Kedar Jadhav ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 2 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Sunrisers won by 7 runs",
+        "Runs": "3",
+        "Balls": "10",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "30.00"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Kedar Jadhav ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 7 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "KKR won by 10 runs",
+        "Runs": "7",
+        "Balls": "12",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "58.33"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Kedar Jadhav ",
+        "Venue": " Sharjah",
+        "Date": " Sep 22 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Royals won by 16 runs",
+        "Runs": "22",
+        "Balls": "16",
+        "Fours": "3",
+        "Sixes": "0",
+        "Sr": "137.50"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Kedar Jadhav ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 19 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Royals won by 7 wickets (with 15 balls remaining)",
+        "Runs": "4",
+        "Balls": "7",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "57.14"
+    },
+    {
+        "MyTeamName": "Chennai Super Kings",
+        "Name": "Kedar Jadhav ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Sep 25 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Capitals won by 44 runs",
+        "Runs": "26",
+        "Balls": "21",
+        "Fours": "3",
+        "Sixes": "0",
+        "Sr": "123.80"
+    }
+]

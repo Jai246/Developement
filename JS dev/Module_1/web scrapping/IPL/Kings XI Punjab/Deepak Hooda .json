@@ -1,1 +1,67 @@
-[{"MyTeamName":"Kings XI Punjab","Name":"Deepak Hooda ","Venue":" Abu Dhabi","Date":" Nov 1 2020","OpponentTeamName":"Chennai Super Kings ","Result":"Super Kings won by 9 wickets (with 7 balls remaining)","Runs":"62","Balls":"30","Fours":"3","Sixes":"4","Sr":"206.66"},{"MyTeamName":"Kings XI Punjab","Name":"Deepak Hooda ","Venue":" Dubai (DSC)","Date":" Oct 20 2020","OpponentTeamName":"Kings XI Punjab ","Result":"Kings XI won by 5 wickets (with 6 balls remaining)","Runs":"15","Balls":"22","Fours":"1","Sixes":"0","Sr":"68.18"},{"MyTeamName":"Kings XI Punjab","Name":"Deepak Hooda ","Venue":" Abu Dhabi","Date":" Oct 30 2020","OpponentTeamName":"Rajasthan Royals ","Result":"Royals won by 7 wickets (with 15 balls remaining)","Runs":"1","Balls":"1","Fours":"0","Sixes":"0","Sr":"100.00"},{"MyTeamName":"Kings XI Punjab","Name":"Deepak Hooda ","Venue":" Dubai (DSC)","Date":" Oct 18 2020","OpponentTeamName":"Kings XI Punjab ","Result":"Match tied (Kings XI won the one-over eliminator)","Runs":"23","Balls":"16","Fours":"1","Sixes":"1","Sr":"143.75"},{"MyTeamName":"Kings XI Punjab","Name":"Deepak Hooda ","Venue":" Dubai (DSC)","Date":" Oct 24 2020","OpponentTeamName":"Sunrisers Hyderabad ","Result":"Kings XI won by 12 runs","Runs":"0","Balls":"2","Fours":"0","Sixes":"0","Sr":"0.00"}]
+[
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Abu Dhabi",
+        "Date": " Nov 1 2020",
+        "OpponentTeamName": "Chennai Super Kings ",
+        "Result": "Super Kings won by 9 wickets (with 7 balls remaining)",
+        "Runs": "62",
+        "Balls": "30",
+        "Fours": "3",
+        "Sixes": "4",
+        "Sr": "206.66"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 20 2020",
+        "OpponentTeamName": "Kings XI Punjab ",
+        "Result": "Kings XI won by 5 wickets (with 6 balls remaining)",
+        "Runs": "15",
+        "Balls": "22",
+        "Fours": "1",
+        "Sixes": "0",
+        "Sr": "68.18"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Abu Dhabi",
+        "Date": " Oct 30 2020",
+        "OpponentTeamName": "Rajasthan Royals ",
+        "Result": "Royals won by 7 wickets (with 15 balls remaining)",
+        "Runs": "1",
+        "Balls": "1",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "100.00"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 18 2020",
+        "OpponentTeamName": "Kings XI Punjab ",
+        "Result": "Match tied (Kings XI won the one-over eliminator)",
+        "Runs": "23",
+        "Balls": "16",
+        "Fours": "1",
+        "Sixes": "1",
+        "Sr": "143.75"
+    },
+    {
+        "MyTeamName": "Kings XI Punjab",
+        "Name": "Deepak Hooda ",
+        "Venue": " Dubai (DSC)",
+        "Date": " Oct 24 2020",
+        "OpponentTeamName": "Sunrisers Hyderabad ",
+        "Result": "Kings XI won by 12 runs",
+        "Runs": "0",
+        "Balls": "2",
+        "Fours": "0",
+        "Sixes": "0",
+        "Sr": "0.00"
+    }
+]
