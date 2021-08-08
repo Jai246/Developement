@@ -10,10 +10,7 @@ function makeleaderBoard(linkScore) {
     request(linkScore, function (error, response, html) {
         process(html);
     });
-
-
 }
-
 //let linkScore = "https://www.espncricinfo.com/series/ipl-2021-1249214/punjab-kings-vs-delhi-capitals-29th-match-1254086/full-scorecard";
 // Remember
 // find and text both are selector tool functions
@@ -50,7 +47,7 @@ function process(linkScore) {
                     "Name": selectTool(td[0]).text(),
                     "Venue": moreDetails[1] + "",
                     "Date": moreDetails[2] + "",
-                    "OpponentTeamName": (Tname == selectTool(teamName[1]).text().split("INNINGS")[0].trim()) ? selectTool(teamName[0]).text().split("INNINGS")[0].trim() : selectTool(teamName[1]).text().split("INNINGS")[0],
+                    "OpponentTeamName": (Tname == selectTool(teamName[1]).text().split("INNINGS")[0].trim()) ? selectTool(teamName[0]).text().split("INNINGS")[0].trim() : selectTool(teamName[1]).text().split("INNINGS")[0].trim(),
                     "Result": Result + "",
                     "Runs": selectTool(td[2]).text() + "",
                     "Balls": selectTool(td[3]).text() + "",
