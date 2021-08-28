@@ -2,6 +2,7 @@ const fs = require("fs");
 const cheerio = require("cheerio");
 const request = require("request");
 const path = require("path");
+let xlsx = require("xlsx");
 let currfolderPath = "./IPL";
 
 let linkHTML = "";
@@ -11,8 +12,6 @@ function makeleaderBoard(linkScore) {
         process(html);
     });
 }
-//let linkScore = "https://www.espncricinfo.com/series/ipl-2021-1249214/punjab-kings-vs-delhi-capitals-29th-match-1254086/full-scorecard";
-// Remember
 // find and text both are selector tool functions
 function process(linkScore) {
     selectTool = cheerio.load(linkScore);
@@ -39,9 +38,7 @@ function process(linkScore) {
         for (let i = 0; i < AllTr.length; i++) {
             let td = selectTool(AllTr[i]).find("td"); // finding td from tr
             if (td.length == 8) {
-                if (!isPlayerExists(path.join(Tname, selectTool(td[0]).text() + ".json"))) {
-                    fs.writeFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"), JSON.stringify([]));
-                }
+
                 let details = {
                     "MyTeamName": Tname,
                     "Name": selectTool(td[0]).text(),
@@ -56,21 +53,67 @@ function process(linkScore) {
                     "Sr": selectTool(td[7]).text() + ""
                 };
 
-                let content = fs.readFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"));
-                let jsonData = JSON.parse(content);
-                // console.log(typeof(jsonData));
-                jsonData.push(details);
-                let jsonWritable = JSON.stringify(jsonData);
-                fs.writeFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"), jsonWritable);
+                // CREATION OF JSON FILE
+
+                // if (!isPlayerExists(path.join(Tname, selectTool(td[0]).text() + ".json"))) {
+                //     fs.writeFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"), JSON.stringify([]));
+                // }
+
+                // let content = fs.readFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"));
+                // let jsonData = JSON.parse(content);
+                // // console.log(typeof(jsonData));
+                // jsonData.push(details);
+                // let jsonWritable = JSON.stringify(jsonData);
+                // fs.writeFileSync(path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".json"), jsonWritable);
+
+
+                // CREATION OF XLSX FILE
+                
+                let playerFilePath = path.join(currfolderPath, Tname, selectTool(td[0]).text() + ".xlsx");
+                let playerArray = [];
+                if (fs.existsSync(playerFilePath) == false) {
+                    playerArray.push(details);
+                } else {
+                    // append
+                    playerArray = excelReader(playerFilePath, selectTool(td[0]).text());
+                    playerArray.push(details);
+                }
+                // write in the files
+                // writeContent(playerFilePath, playerArray);
+                excelWriter(playerFilePath, playerArray, selectTool(td[0]).text());
 
             }
             // printing names from td
-            // because string would be somewhere insoide the tbody
+            // because string would be somewhere inside the tbody
             // when we print it without text() we will get some objects which describes
             // the properties that it holds not the actual string name;
             // text() will find the string part in the td and print it;
         }
     }
+}
+
+function excelWriter(filePath, json, sheetName) {
+    // workbook create
+    let newWB = xlsx.utils.book_new();
+    // worksheet
+    let newWS = xlsx.utils.json_to_sheet(json);
+    xlsx.utils.book_append_sheet(newWB, newWS, sheetName);
+    // excel file create 
+    xlsx.writeFile(newWB, filePath);
+}
+// // json data -> excel format convert
+// // -> newwb , ws , sheet name
+// // filePath
+// read 
+//  workbook get
+function excelReader(filePath, sheetName) {
+    // player workbook
+    let wb = xlsx.readFile(filePath);
+    // get data from a particular sheet in that wb
+    let excelData = wb.Sheets[sheetName];
+    // sheet to json 
+    let ans = xlsx.utils.sheet_to_json(excelData);
+    return ans;
 }
 
 function isTeamFolderExists(teamName) {
