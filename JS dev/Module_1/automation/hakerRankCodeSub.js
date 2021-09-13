@@ -2,7 +2,7 @@ let puppeteer = require("puppeteer");
 const loginCredentials = require("./secrets");
 let browserStartPromise = puppeteer.launch({
     // visible 
-    headless: false,
+    headless: false, // if we make this true then cromium browser will not be opened
     // type 1sec // slowMo: 1000,
     defaultViewport: null,
     // browser setting 
