@@ -17,6 +17,5 @@ console.log("before");
     } catch (err) {
         console.log("err", err);
     }
-
 })();
 console.log("after");

@@ -1,3 +1,5 @@
+// we can do this using simple loop as well
+
 let fs = require("fs");
 console.log("Before");
 // start the work 
