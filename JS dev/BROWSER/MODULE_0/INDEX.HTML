@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hello jai bhambri </h1>
+<script>
+    let p = document.createElement("p");
+    let body = document.querySelector("body");
+    body.appendChild(p);
+
+    p.textContent = "HELLO AND WELCOME";
+
+    setTimeout(function (){
+        p.textContent = "JAI BHAMBRI -> ";
+    },1000);
+
+    setTimeout(function (){
+        p.textContent = "JAI BHAMBRI -> HELLO";
+    },2000);
+
+    setTimeout(function (){
+        p.textContent = "JAI BHAMBRI -> HOW ARE YOU";
+    },3000);
+
+    // setTimeout(function (){
+    //     p.remove();
+    // },5000);
+
+    // p.style.backgroundColor = "blue";
+
+</script>
+</body>
+</html>

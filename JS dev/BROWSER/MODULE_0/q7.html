@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #pass {
+            display: block;
+            margin: auto;
+            margin-top: 10rem;
+            width: 20rem;
+            height: 3rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 3rem;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="pass" />
+    <p>Caps on!</p>
+    <script>
+        //Q- Write a script which keeps checking the password being entered. 
+        //   It should check if capslock is on or off if its on it should not allow to type and show "caps on" on screen, 
+        // also it should only allow to type if the shift in pressed down.
+        let input = document.querySelector("input");
+        let p = document.querySelector("p");
+
+        input.addEventListener("keydown", function (e) { // read mdn
+            console.log("e", e)
+            // you press caplock only once 
+            let isCapsOn = e.getModifierState("CapsLock");
+            if (isCapsOn) {
+                console.log("cap is on");
+                //it prevents the effect of that event on the ui
+                let p = document.createElement("p");
+                p.textContent = "Caps Is On , Use Shift to type in capital";
+                let body = document.querySelector("body");
+                body.appendChild(p);
+                e.preventDefault();
+            }
+             else if (e.shiftKey) {
+                //e.preventDefault();
+                console.log("key", e.key);
+             }
+        });
+    </script>
+</body>
+</html>
