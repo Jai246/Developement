@@ -1,0 +1,98 @@
+<!-- tags: box model, next sibling selector, adjacent sibling selector, child selector, combinator, list style  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Q- Style the elements as written in the text in html page  */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .container div {
+        height: 50%;
+        border: 1px solid;
+      }
+
+      /* Solution: */
+
+      /* * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .container div {
+        height: 50%;
+        border: 1px solid;
+      }
+
+      p + ul li ~ li {
+        color: red;
+      }
+
+      ul + ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+      }
+      hr~p{
+          color: green;
+      }
+      hr+p{
+          color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>Top sub container</p>
+        <hr />
+        <p>Make me red</p>
+        <p>Make us green</p>
+        <p>Make us green</p>
+      </div>
+      <div>
+        <p>Bottom sub container</p>
+        <ul>
+          <li>Below me Everything should be red</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+        Below should not be red, but flex with no list styling, also at
+        horizontal centre of the screen
+        <ul>
+          <li>Flex</li>
+          <li>Me</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

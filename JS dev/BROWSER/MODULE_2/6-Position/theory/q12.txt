@@ -1,0 +1,16 @@
+tags: position
+
+Q- Which css property is used to create a global top navbar for a web page?
+
+ a) position
+ 
+ b) flexbox
+ 
+ c) grid
+ 
+ d) float
+
+
+ Solution:
+
+ a

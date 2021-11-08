@@ -1,0 +1,16 @@
+tags: z-index
+
+Q- Which property is used to specify which elements appear on top of other elements when elements are layered?
+
+a) index
+
+b) z-axis
+
+c) z-index
+
+d) position
+
+
+Solution:
+
+c 

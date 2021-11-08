@@ -1,0 +1,40 @@
+<!-- tags: not selector, pseudo elements, colors, fonts  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Q- image tags without alt attribute are inaccessible! Using css find such img tags remove the image displayed by them and instead it place there should be big text in red with a red border  */
+
+      /* Solution: */
+      /* * {
+        box-sizing: border-box;
+      }
+     
+      img:not([alt]) {
+        border: 10px solid red;
+        content: url("") !important;
+      }
+
+      img:not([alt])::before {
+        content: "In accessible image!!!";
+        color: red;
+        font-size: 4rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <img src="http://www.wollemipine.com/images/wp_wallpaper8_800x600.jpg" />
+    <img
+      src="http://www.spitzer.caltech.edu/uploaded_files/images/0009/6502/ssc2013-07b_Ti.jpg"
+      alt="galaxy"
+    />
+    <img
+      src="https://www.esri.com/about/newsroom/wp-content/uploads/2017/09/Podcast_Leading-Companies-Location-Intelligence-BI-CRM_Square-600-x-600.jpg"
+    />
+  </body>
+</html>

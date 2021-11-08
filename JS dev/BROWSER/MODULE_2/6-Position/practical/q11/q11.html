@@ -1,0 +1,93 @@
+<!-- Q- Style the table according to image, to center the table you have to use position and transform, flex is not allowed  -->
+
+<!-- tags: tables, borders, background, color, fonts, position, transform  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Solution: -->
+    <!-- <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        table,thead,tbody,tr,td,th{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th,td{
+            height: 6rem;
+            width: 8rem;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        table{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        th{
+            font-size: 2rem;
+            background-color: #2e86de;
+        }
+
+        td{
+            font-size: 1.5rem;
+            background-color: #1dd1a1;
+        }
+    </style> -->
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>CGPA</th>
+                <th>College</th>
+                <th>Placed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>9</td>
+                <td>DU</td>
+                <td>Yes</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>6</td>
+                <td>DU</td>
+                <td>Not</td>
+            </tr>
+
+            <tr>
+                <td>Kishan</td>
+                <td>7.6</td>
+                <td>NSIT<NSIT/td>
+                <td>Yes</td>
+            </tr>
+
+            <tr>
+                <td>Priya</td>
+                <td>9.5</td>
+                <td>DTU</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

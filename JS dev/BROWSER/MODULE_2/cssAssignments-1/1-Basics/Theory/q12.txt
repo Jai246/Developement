@@ -1,0 +1,17 @@
+tags: background, images 
+
+Q- By default, a background image will repeat
+
+a) indefinitely in x-axis
+
+b) indefinitely in y-axis
+
+c) indefinitely in x-axis as well as y-axis 
+
+d) it does not repeat
+
+Solution:
+
+c
+
+

@@ -1,0 +1,91 @@
+<!-- tags: css selectors, combinators, specificity, precedence  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Q- delete the fraud selector(which are never used) and change the color of div to blue border black and height x width =  20rem x 20rem */
+
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div.div {
+        border: 1px solid red;
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+      }
+
+      div#div {
+        background-color: yellow;
+      }
+      div {
+        border: 1px solid yellow;
+        background-color: red;
+      }
+
+      #div {
+        border: 1px solid yellow;
+        height: 10rem;
+        width: 10rem;
+        background-color: yellow;
+      }
+
+      .div {
+        border: 1px solid red;
+        height: 10rem;
+        width: 20rem;
+        background-color: yellow;
+      }
+
+      #div.div {
+        height: 10rem;
+        width: 10rem;
+      }
+
+      div#div.div {
+        border: 1px solid red;
+        width: 20rem;
+      }
+
+      /* Solution: */
+
+      /* body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div#div {
+        background-color: blue;
+      }
+
+      #div.div {
+        height: 20rem;
+      }
+
+      div#div.div {
+        border: 1px solid black;
+        width: 20rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="div" class="div"></div>
+  </body>
+</html>

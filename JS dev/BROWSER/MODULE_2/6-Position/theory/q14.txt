@@ -1,0 +1,15 @@
+tags: position
+
+Q- Which style places an element at a fixed location within its container?
+ 
+ a) position: absolute;
+ 
+ b) display: flex;
+ 
+ c) display: block;
+ 
+ d) float: left;
+
+Solution:
+
+a 

@@ -1,0 +1,63 @@
+<!-- Q- Create a modal exactly as in the given image. Also using css when check on accept make it green and when checked on deny make it red -->
+
+<!-- tags: checkbox, flex, sibling selector, attribute selector  -->
+
+<!-- Solution:  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal {
+        display: flex;
+        height: 40%;
+        width: 40%;
+        border: 1px solid;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.8rem;
+      }
+      input {
+        border: 0px;
+        width: 2rem;
+        height: 2rem;
+      }
+      input:checked + label[for="one"] {
+        color: green;
+      }
+
+      input:checked + label[for="two"] {
+        color: red;
+      }
+      label {
+        position: relative;
+        bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <div>
+        <input type="radio" name="ans" id="one" />
+        <label for="one">Accept</label>
+      </div>
+      <div>
+        <input type="radio" name="ans" id="two" />
+        <label for="two">Deny</label>
+      </div>
+    </div>
+  </body>
+</html>

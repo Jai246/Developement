@@ -1,0 +1,15 @@
+tags: list styling 
+
+Q- Which property allows you to control the shape or appearance of the marker of a list?
+
+a) list-style
+
+b) text-decoration
+
+c) none
+
+d) both of them 
+
+Solution: 
+
+a

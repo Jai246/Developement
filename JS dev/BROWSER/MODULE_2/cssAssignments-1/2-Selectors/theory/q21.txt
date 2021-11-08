@@ -1,0 +1,18 @@
+tags: css next siblings selector 
+
+Q- Which of the following statements are true:
+
+I => ~ is called adjacent sibling selector 
+II => ~ is used to select all the siblings after selected element
+
+a) I 
+
+b) II 
+
+c) both 
+
+d) none 
+
+Solution:
+
+b 

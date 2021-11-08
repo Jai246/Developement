@@ -1,0 +1,27 @@
+tags: box model
+
+<div class="m1"></div>
+<div class="m2"></div>
+
+.m1{
+    padding:10px;
+}
+
+.m2{
+    margin:20px;
+    padding:30px;
+}
+
+Q- What is the total space between the content boxes of m1 and m2:
+
+a) 60px
+
+b) 20px
+
+c) 50px
+
+d) none of them 
+
+Solution: 
+
+a 

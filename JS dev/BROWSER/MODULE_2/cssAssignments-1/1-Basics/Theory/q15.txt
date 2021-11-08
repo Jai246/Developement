@@ -1,0 +1,15 @@
+tags: fonts 
+
+Q- What property is used to adjust the space between text characters?
+ 
+ a)font-style
+ 
+ b)text-transform
+ 
+ c)font-variant
+ 
+ d)letter-spacing
+
+Solution:
+
+d

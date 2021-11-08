@@ -1,0 +1,138 @@
+<!-- Q-Make a chessboard by applying css to the following html (use direct child selector and nth child selector)  -->
+
+<!-- tags: direct child selector, nth child selector, combinators, flex -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Solution:  */
+        /* *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chessboard{
+            height: 50rem;
+            width: 50rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid;
+        }
+
+        .chessboard>div{
+            height: calc( 100% / 8 );
+            display: flex;
+
+        }
+
+        .chessboard>div>div{
+
+            width: calc( 100% / 8 );
+        }
+
+        .chessboard>div:nth-child(even)>div:nth-child(even){
+            background-color: black;
+        }
+
+        .chessboard>div:nth-child(odd)>div:nth-child(odd){
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

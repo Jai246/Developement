@@ -1,0 +1,15 @@
+tags: css selector, specificity
+
+Q- Which css selector has a specificity of 0?
+
+a) universal selector
+
+b) element selector
+
+c) pseudo selector
+
+d) no selector
+
+Solution:
+
+a 

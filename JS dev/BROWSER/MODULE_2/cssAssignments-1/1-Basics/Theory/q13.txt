@@ -1,0 +1,16 @@
+tags: margin, padding 
+
+Q- Which of the statement is true about margin and padding?
+
+a) By default body has some margin and padding 
+
+b) Margin is additive in height of the element when not using border box 
+
+c) Margin gives space outside the border of element and padding gives inside the border of the element 
+
+d) p tag has no default margins 
+
+
+Solution:
+
+c

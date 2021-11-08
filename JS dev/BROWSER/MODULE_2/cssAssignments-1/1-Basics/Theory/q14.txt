@@ -1,0 +1,16 @@
+tags: units, calc 
+
+Q- How do we solve an equation with multiple units in css?
+
+a) We dont have to do anything it is automatically handled
+
+b) calc function 
+
+c) Convert them into a single unit and then perform calculations 
+
+d) We cannot solve such equation in css 
+
+Solution:
+
+b
+

@@ -1,0 +1,16 @@
+tags: specificity, precedence
+
+Q- Select the selector with highest specificity:
+
+a) #id
+
+b) #id[title="abc"]
+
+c) p#id
+
+d) p.class[title="abc"]
+
+
+Solution:
+
+b

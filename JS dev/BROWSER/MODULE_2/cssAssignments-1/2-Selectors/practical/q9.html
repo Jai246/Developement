@@ -1,0 +1,46 @@
+<!-- tags: case insensitive attribute selector, padding, border, font, shadow  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* Solution:  */
+      /* * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      [class="show" i] {
+        border: 1px solid;
+        font-size: 4rem;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      [class="show" i]:hover {
+        box-shadow: 0px 5px 10px 0px;
+        text-shadow: 5px 5px 5px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Q- Irrespective of case-sensitivity, using just a single selector make all the elements with class show have bold font border and larger text(give spacing between border and text), also on hovering give them a box shadow and text-shadow -->
+    <p class="SHOW">Lorem ipsum dolor sit amet.</p>
+
+    <div>
+      <h2 class="Show">lorem title</h2>
+      <p class="show">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <ul>
+      <li class="shOw">1</li>
+      <li class="Show">2</li>
+      <li class="show">3</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+tags: selectors, attribute selectors
+
+Q- Which of the following selector is used to select an element based on starting value of a given attribute?
+
+a) [attr|=val]
+
+b) [attr*=val]
+
+c) [attr^=val]
+
+d) [attr*=val]  
+
+Solution:
+
+c

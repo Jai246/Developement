@@ -9,6 +9,7 @@ let plusContainer = document.querySelector(".plus-container");
 let color_Container = document.querySelector(".color_container");
 let input_container = document.querySelector(".input_container");
 let cross = document.querySelector(".multiply-container");
+let allColorElements = document.querySelectorAll(".color_picker");
 let colors = ["pink", "blue", "green", "black"];
 let modalShow = false;
 let deleteMode = false;
@@ -92,11 +93,18 @@ plusContainer.addEventListener("click", function (e) {
 
 color_Container.addEventListener("click",function(e){
     let element = e.target;
-    let color = element.classList[1]
+    let color = element.classList[1];
+    for (let i = 0; i < allColorElements.length; i++) {
+        allColorElements[i].classList.remove("selected");
+    }
+    defaultColor = color;
+    if(element!=color_Container) element.classList.add("selected");
+
     input.addEventListener("keydown", function (e) {
+        console.log("hello");
         if (e.code == "Enter" && input.value) {
             let id = uid();
-            createTask(id,input.value,true,color);
+            createTask(id,input.value,true,defaultColor);
             input.value = "";
         }
     })

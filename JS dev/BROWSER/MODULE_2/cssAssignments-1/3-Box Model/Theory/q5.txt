@@ -1,0 +1,26 @@
+tags: box model
+
+<div></div>
+<p></p>
+
+div{
+    margin-bottom:20px;
+}
+
+p{
+    margin-top:40px;
+}
+
+What is the total space between div and p tag?
+
+a) 20px 
+
+b) 40px 
+
+c) 60px 
+
+d) None of them 
+
+Solution:
+
+c

@@ -1,0 +1,30 @@
+tags: selectors, specificity, precedence
+
+1- 
+    p{
+        color: red!important;
+    }
+
+2- 
+    p#id{
+        color: blue;
+    }
+
+3- 
+    p#id.class{
+        color:yellow;
+    }
+
+What is the order of specificity?
+
+a) 1 2 3
+
+b) 2 1 3
+
+c) 3 1 2
+
+d) 1 3 2
+
+Solution:
+
+d

@@ -1,0 +1,15 @@
+tags: basic css 
+
+Q- "webkit" prefix does not work on which of the following browsers?
+
+a) Android 
+
+b) Safari 
+
+c) Mozilla
+
+d) Chrome 
+
+Solution:
+
+c

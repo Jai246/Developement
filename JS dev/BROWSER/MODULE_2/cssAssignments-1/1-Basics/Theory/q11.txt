@@ -1,0 +1,15 @@
+tags: colors, opacity
+
+Q- What is difference between opacity and rbga values?
+
+a) No difference
+
+b) opacity works on entire element rgba works just on background
+
+c) rgba works on entire element opacity works just on background
+
+d) None of the above
+
+Solution:
+
+b 

@@ -1,0 +1,16 @@
+tags: basic css 
+
+Q- Which following way is used to apply css to a page?
+
+a) External style sheet 
+
+b) Style tag 
+
+c) Inline styling 
+
+d) All the above 
+
+Solution: 
+
+d
+

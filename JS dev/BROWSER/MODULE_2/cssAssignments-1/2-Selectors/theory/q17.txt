@@ -1,0 +1,32 @@
+tags: sibling selector, universal selector, color, background
+
+Q- Give output:
+
+
+a~*{
+  color: blue;
+}
+
+h2{
+  background: blue;
+}
+
+<div>
+  <p>1</p>
+  <a>link</a>
+  <p>2</p>
+  <h2>3</h2>
+</div>
+
+
+a) Just h2 will have a blue background 
+
+b) h2 will have blue background and anchor tag will have blue color 
+
+c) h2 will have blue background and all tags after anchor tag which are sibling of anchor will have have blue color 
+
+d) Error in css no style will be applied
+
+Solution:
+
+c

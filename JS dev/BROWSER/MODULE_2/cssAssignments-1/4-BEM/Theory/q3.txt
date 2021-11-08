@@ -1,0 +1,13 @@
+Q- Which of the following statement are true?
+
+tags: BEM 
+
+I: BEM stands for Block Element Modifier 
+II: BEM is a naming convention 
+
+a) I 
+b) II 
+c) Both 
+d) none 
+
+Solution: c 

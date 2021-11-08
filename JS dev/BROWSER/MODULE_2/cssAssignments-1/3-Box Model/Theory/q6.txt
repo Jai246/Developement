@@ -1,0 +1,21 @@
+tags: box model
+
+div{
+    height: 50px;
+    padding:20px;
+    border:5px solid;
+}
+
+Q- What is the height of above div with and without box model?
+
+a) 50px, 100px 
+
+b) 100px, 50px 
+
+c) 100px, 100px 
+
+d) 50px, 50px 
+
+Solution:
+
+a 

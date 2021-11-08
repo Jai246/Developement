@@ -1,0 +1,15 @@
+tags: box model 
+
+Q- Which model contains these 4 components- content, margin, padding, border:
+
+a) CSS box model 
+
+b) flexbox model 
+
+c) grid layout model 
+
+d) template layout model 
+
+Solution:
+
+a

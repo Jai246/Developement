@@ -1,0 +1,118 @@
+<!-- Q- Style the following form according to given image, make sure the form is in the middle of the page both horizontally and vertically. And also use flex to do that.  -->
+
+<!-- tags: forms, flex, text-align, padding, margin, fonts, colors, border-radius   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Solution:  */
+      /* * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        height: 50vh;
+        width: 50vw;
+        font-size: 1rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 48px;
+        background-color: rgb(58, 58, 60);
+        border-radius: 50px;
+      }
+      form div {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      label {
+        width: 50%;
+        display: flex;
+        align-items: center;
+      }
+
+      label p {
+        width: 40%;
+      }
+      label input {
+        text-align: center;
+        background-color: rgb(58, 58, 60);
+        border: 1px solid rgb(99, 99, 102);
+        color: rgb(142, 142, 147);
+        border-radius: 10px;
+        outline: none;
+        width: 60%;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      input {
+        height: 80%;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        font-size: 1.2rem;
+        border-radius: 12px;
+        color: white;
+        background-color: rgb(64, 156, 255);
+        border: none;
+        outline: none;
+        width: 6rem;
+        height: 2rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="fname">
+          <p>First Name</p>
+          <input type="text" id="fname" />
+        </label>
+        <label for="lname">
+          <p>Last Name</p>
+          <input type="text" id="lname" />
+        </label>
+      </div>
+
+      <div>
+        <label for="email">
+          <p>Email</p>
+          <input type="email" id="email" />
+        </label>
+        <label for="phone">
+          <p>Phone</p>
+          <input type="number" id="phone" />
+        </label>
+      </div>
+
+      <div>
+        <label for="age">
+          <p>Age</p>
+          <input type="number" id="age" />
+        </label>
+        <label for="city">
+          <p>City</p>
+          <input type="text" id="city" />
+        </label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

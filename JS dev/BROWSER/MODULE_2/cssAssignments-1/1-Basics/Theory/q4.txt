@@ -1,0 +1,19 @@
+tags: tables, borders 
+
+tr,td,th,table,tbody,thead{
+    border: 4px solid;
+}
+
+Q- When we do this we get multiple borders around cells of table. How will you manage to maintain border as well as remove redundant borders?
+
+a) use border collapse property with collapse as value 
+
+b) use border collapse property with separate as value 
+
+c) just remove border styling from elements which is giving overlapping borders 
+
+d) a and c 
+
+Solution: 
+
+d 

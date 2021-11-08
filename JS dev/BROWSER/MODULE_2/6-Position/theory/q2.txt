@@ -1,0 +1,15 @@
+tags: position
+
+Q- Which property can be used to take element out of normal flow of the page:
+
+a) grid
+
+b) sticky
+
+c) position
+
+d) flex
+
+Solution:
+
+c

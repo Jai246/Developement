@@ -1,0 +1,18 @@
+tags: basics, css, precedence
+
+Q- Which of the following statements are true:
+
+I =>There are 3 ways to write css- inline, style tag and external style sheet 
+II => if selectors are same, inline css takes precedence over any other form of css insertion
+
+a) I 
+
+b) II 
+
+c) both 
+
+d) none 
+
+Solution:
+
+c  

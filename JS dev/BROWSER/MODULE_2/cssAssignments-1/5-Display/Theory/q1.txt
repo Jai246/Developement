@@ -1,0 +1,15 @@
+tags: flex, block 
+
+Q- Flexbox sets the element to be of following display type:
+
+a) none 
+
+b) block 
+
+c) inline 
+
+d) inline-block
+
+Solution:
+
+b 

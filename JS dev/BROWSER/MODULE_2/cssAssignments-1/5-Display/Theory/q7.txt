@@ -1,0 +1,18 @@
+tags: display, padding, margin 
+
+Q- Which of the following statements are true:
+
+I => inline-block elements take space of an entire row or width.
+II => inline elements can have padding and margins added on all four sides
+
+a) I 
+
+b) II 
+
+c) both 
+
+d) none 
+
+Solution:
+
+d  

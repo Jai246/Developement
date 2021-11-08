@@ -1,0 +1,18 @@
+tags: position 
+
+Q- Which of the following statements are true:
+
+I => absolute and fixed property works the same way if parent is body 
+II => default position property value of an element is static 
+
+a) I 
+
+b) II 
+
+c) both 
+
+d) none 
+
+Solution:
+
+c  

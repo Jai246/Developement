@@ -1,0 +1,27 @@
+tags: box model 
+
+span{
+    margin-top:30px;
+}
+
+div{
+    margin-bottom:40px;
+}
+
+<div></div>
+<span></span>
+
+
+Q- What is total spacing between div and span
+
+a) 30px 
+
+b) 10px
+
+c) 40px 
+
+d) 70px 
+
+Solution: 
+
+c

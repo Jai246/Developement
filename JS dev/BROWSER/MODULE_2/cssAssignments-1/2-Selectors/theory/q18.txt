@@ -1,0 +1,15 @@
+tags: specificity, precedence
+
+Q- Which CSS keyword can you use to override standard source order and specificity rules?
+ 
+ a) !elevate!
+ 
+ b) *prime
+ 
+ c) override
+ 
+ d) !important
+
+ Solution:
+ 
+ d

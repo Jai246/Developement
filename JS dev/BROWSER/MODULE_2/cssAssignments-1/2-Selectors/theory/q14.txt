@@ -1,0 +1,15 @@
+tags: attribute selector
+
+Q- How would you select an <a> element with a "data-id" attribute?
+
+ a) a[data-id]{...}
+ 
+ b) a > data-id {...}
+ 
+ c) a.data-id {...}
+ 
+ d) a=data-id {...}
+
+ Solution:
+
+ a

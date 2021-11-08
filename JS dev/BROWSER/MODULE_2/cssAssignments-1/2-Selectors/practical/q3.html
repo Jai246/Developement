@@ -1,0 +1,70 @@
+<!-- tags: pseudo elements, pseudo class, transform, opacity, border, position, background:unset -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+
+      .cards {
+        background-color:crimson;
+        height: 25vh;
+        width: 10vw;
+        margin: 4rem;
+      }
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .invisible{
+        display: none;
+      
+      }
+    /* Solution: */
+      /* .invisible{
+        opacity: 0;
+      }
+      .invisible:hover{
+        opacity: 1;
+        background-color: unset!important;
+        border: 1px dashed ;
+        position: relative;
+      }
+
+      .invisible:hover::after{
+        content: "Deleted";
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: red;
+        transform: translate(-50%,-50%);
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Q- Right now on double clicking any card is gets removed from the screen but the other cards change their relative position. We dont want that. Fix it and on hovering the empty space where card was supposed to be a black dashed outline of removed card should appear with deleted written inside it at the middle with big fonts and red color  -->
+    <div class="container">
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <div class="cards"></div>
+      <script>
+        let cards = document.querySelectorAll(".cards")
+        for(let i = 0;i<cards.length;i++){
+          cards[i].addEventListener("dblclick",function(e){
+            e.currentTarget.classList.add("invisible")
+          })
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+tags: display
+
+Q- Which statement is true for inline-block element?
+
+a) They work as a hybrid of block and inline elements 
+
+b) You can assign them height and width property values 
+
+c) They dont take the entire horizontal space of the screen.
+
+d) All the above 
+
+Solution:
+
+d

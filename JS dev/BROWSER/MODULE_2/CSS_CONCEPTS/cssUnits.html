@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* 1rem is relative to html font size -> 
+        responsive design -> device and layout -> change*/
+        /* default 1rem -> 16px */
+        html {
+            font-size: 15px;
+        }
+        body {
+            margin: 0px;
+            background-color: rgb(196, 196, 37);
+        }
+        /* element is in the form of a box */
+        .box {
+            height: 160px;
+            width: 160px;
+        }
+        .one {
+            background-color: lightskyblue;
+            /* space outside an element  */
+            /* simple  */
+            /* margin-bottom: 20px; */
+            /* margin-left: 50px;
+            margin-top: 10px; */
+        }
+        .two {
+            background-color: lightpink;
+            /* space inside an element */
+        }
+        /* only applicable to the direct child of the element */
+
+        .type-a>*{
+            border-bottom: 5px solid brown;
+        }
+
+        body>* {
+            border-bottom: 5px solid black;
+        }
+        /* relative unit -> calculate   */
+        /* rem */
+        
+        .type-b>* {
+            height: 10rem;
+            width: 10rem;
+        }
+        /* vh vw */
+        /* view port is basically our screen width */
+        /* vh stands for viewport height and vw is for viewport width. Hence, setting an element*/
+        /*to a width value of 50vw means that the element will have a width that's 50% of the viewport
+        size, and this stays true when the viewport is resized. */
+        .type-c>* {
+            height: 50vh;
+            width: 40vw;
+        }
+        .type-d {
+            height: 20rem;
+            width: 20rem;
+            background-color:lightgreen
+        }
+        /* percentage  */
+        /* calculated according to the parent */
+        .type-d>.one{
+            height:40%;
+            width:50%;
+        }
+        .type-d>.two{
+            height:40%;
+            width:70%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- px -->
+    <div class="type-a">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- rem -->
+    <div class="type-b">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- vh vw -->
+    <div class="type-c">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+    <!-- percentage -->
+    <div class="type-d">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+    </div>
+</body>
+
+</html>

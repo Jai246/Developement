@@ -1,0 +1,18 @@
+tags: z-index 
+
+Q- Which of the following statements are true:
+
+I => default value of z-index is 0
+II => The z-index helps specify the stack order of positioned elements that may overlap one another. 
+
+a) I 
+
+b) II 
+
+c) both 
+
+d) none 
+
+Solution:
+
+c  

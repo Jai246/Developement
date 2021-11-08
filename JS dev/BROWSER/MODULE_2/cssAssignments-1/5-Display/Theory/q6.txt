@@ -1,0 +1,18 @@
+tags: display
+
+<img />
+<img />
+
+Q- The above 2 images have a line of spacing between them even though we didn't do anything. How to remove it?
+
+a) write it as <img /><img />
+
+b) make them block 
+
+c) make them inline 
+
+d) a and b 
+
+Solution:
+
+d

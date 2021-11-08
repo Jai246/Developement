@@ -120,28 +120,33 @@ font-size:x-large;
    margin-left:0px;
 }
 .modal{
-   height : 20rem;
-   width:35rem;
+   height : 25rem;
+   width:40rem;
    background-color:white;
-   position : fixed;
+   /* position : relative;
+   bottom: 3.7rem; */
+   position: absolute;
    /* top : calc(50%-50rem);
    left: calc( 50% - (35/2)rem); */
    display:flex;
+   box-shadow: rgb(125, 172, 223) 0px 20px 30px -10px;
 }
 
 .input_container{
    /* border-radius: 6px; */
    width:65%;
    /* border: 1px solid black; */
-   height:100%;
+   height:84%;
    padding:2rem;
    background-color:rgb(34, 36, 56);
+
 }
 
-.input_container_text{
+.input_container_text {
    /* border-radius: 6px; */
    /* outline:auto; */
    background-color:rgb(34, 36, 56);
+   color: white;
    height:100%;
    width:100%;
    border:none;
@@ -150,11 +155,15 @@ font-size:x-large;
    font-family: sans-serif;
    display:flex;
 }
+/*created seperated coz we vant have two displays in one */
+.input_container_text::-webkit-scrollbar{
+   display:none;
+}
 
 .color_container{
    /* border-radius: 6px; */
    background-color: #313146;
-   height:100%;
+   height:83.9%;
    width:35%;
 }
 .color_container{
@@ -172,4 +181,17 @@ font-size:x-large;
    height:3.5rem;
    width:6rem;
 }
-
+.selected{
+   border: 0.2rem solid white;
+}
+.task_main-container{
+   /* padding:0.5rem; */
+  height: 8rem;
+}
+.text{
+   height: 80%;
+   overflow-y: scroll;
+}
+.text::-webkit-scrollbar {
+   display: none;
+ }

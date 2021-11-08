@@ -1,0 +1,15 @@
+tags: class selector 
+
+Q- Which is false for a class selector?
+
+a) Same classes can be used between parent and child element.
+
+b) The same class can be used multiple times per page.
+
+c) Class selectors with a leading period
+
+d) Classes can be used multiple times per page but not within the same element.
+
+Solution:
+
+d
