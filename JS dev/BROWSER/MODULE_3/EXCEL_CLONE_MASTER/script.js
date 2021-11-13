@@ -8,6 +8,8 @@ let AllFonts = document.querySelectorAll(".font_family_input option");
 let AllFontSizes = document.querySelectorAll(".font_size_input option");
 let font_Input = document.querySelector(".font_family_input");
 let font_Size = document.querySelector(".font_size_input");
+let alignment = document.querySelector(".alignment_container");
+let bui = document.querySelector(".bui");
 let current_cell = "";
 address_box.setAttribute("contentEditable","true");
 formulae_box.setAttribute("contentEditable","true");
@@ -29,6 +31,8 @@ for(let i = 0;i<=26;i++){
     div.textContent = String.fromCharCode(65+i-1);
     topRow.appendChild(div);
 }
+
+
 for(let i = 1;i<=100;i++)
 {
     let div = document.createElement("div");
@@ -41,7 +45,7 @@ for(let i = 1;i<=100;i++)
             div2.setAttribute("rid",i);
             div2.setAttribute("cid",j);
             div2.setAttribute("contentEditable","true");
-            div2.style.fontSize = 7;
+            div2.style.fontSize = 10 + "px";
             div2.style.fontFamily = '"Dancing Script"';
             div.appendChild(div2); 
 
@@ -57,18 +61,67 @@ for(let i = 1;i<=100;i++)
     cellsContainer.appendChild(div);
 }
 
+
+
 let AllGridCells = document.querySelectorAll(".cellRows .cell");
-
 for (let i = 0; i < AllGridCells.length; i++) {
-    AllGridCells[i].addEventListener("click", function (e) {
+    AllGridCells[i].addEventListener("click", function () {
         current_cell = AllGridCells[i];
-        let fontOfCurrentCell = current_cell.style.fontFamily;
 
+        /* left right justify center*/
+        let classes = current_cell.classList.value.split(" ");
+        let left = false;
+        let right = false;
+        let justify = false;
+        let center = false;
+
+        for(let i = 0;i<classes.length; i++)
+        {
+            if(classes[i] == "doLeft") left = true;
+            if(classes[i] == "doRight") right = true;
+            if(classes[i] == "doJustify") justify = true;
+            if(classes[i] == "doCenter") center = true;
+        }
+
+        if(left) document.querySelector(".fa-align-left").classList.add("shadow");
+        else if(!left) document.querySelector(".fa-align-left").classList.remove("shadow");
+
+        if(right) document.querySelector(".fa-align-right").classList.add("shadow");
+        else if(!right) document.querySelector(".fa-align-right").classList.remove("shadow");
+
+        if(justify) document.querySelector(".fa-align-justify").classList.add("shadow");
+        else if(!justify) document.querySelector(".fa-align-justify").classList.remove("shadow");
+
+        if(center) document.querySelector(".fa-align-center").classList.add("shadow");
+        else if(!center) document.querySelector(".fa-align-center").classList.remove("shadow");
+
+        /*bold italic underline*/
+        let bold = false;
+        let italic = false;
+        let underline = false;
+
+        for(let i = 0;i<classes.length; i++)
+        {
+            if(classes[i] == "doBold") bold = true;
+            if(classes[i] == "doItalic") italic = true;
+            if(classes[i] == "doUnderline") underline = true;
+        }
+
+        if(bold) document.querySelector(".fa-bold").classList.add("shadow");
+        else if(!bold) document.querySelector(".fa-bold").classList.remove("shadow");
+
+        if(italic) document.querySelector(".fa-italic").classList.add("shadow");
+        else if(!italic) document.querySelector(".fa-italic").classList.remove("shadow");
+
+        if(underline) document.querySelector(".fa-underline").classList.add("shadow");
+        else if(!underline) document.querySelector(".fa-underline").classList.remove("shadow");
+
+        // font family
+        let fontOfCurrentCell = current_cell.style.fontFamily;
         let idx = 0;
         for(let k = 0;k<AllFonts.length;k++)
         {
-            if(AllFonts[k].value == fontOfCurrentCell)
-            {
+            if(AllFonts[k].value == fontOfCurrentCell){
                 idx = k;
                 break;
             }
@@ -76,26 +129,25 @@ for (let i = 0; i < AllGridCells.length; i++) {
         font_Input.selectedIndex = idx;
 
 
-        let sizeOfCurrentFont = current_cell.style.font_Size;
+        // font size
+        let sizeOfCurrentFont = current_cell.style.fontSize;
         let idx2 = 0;
-
         for(let k = 0;k<AllFontSizes.length;k++)
         {
-            if(AllFontSizes[k].value == sizeOfCurrentFont)
-            {
+            if(AllFontSizes[k].value + "px" == sizeOfCurrentFont){
                 idx2 = k;
                 break;
             }
         }
         font_Size.selectedIndex = idx2;
 
+
+        // selection border
         let prevAddress = address_box.innerText;
         if (prevAddress != "") {
             let ridcidObj = getRidCidFromAddress(prevAddress);
-
             let prevCell = document.querySelector(`.cellRows .cell[rid='${ridcidObj.rid}'][cid='${ridcidObj.cid}']`);
             prevCell.style.border ="0.1px solid gray";
-            // console.log(prevCell);
         }
 
         let rid = AllGridCells[i].getAttribute("rid");
@@ -110,14 +162,127 @@ for (let i = 0; i < AllGridCells.length; i++) {
     })
 }
 
+
 font_Input.addEventListener('change',(event)=>{
     let newFont = event.target.value;
     current_cell.style.fontFamily = newFont;
 })
 
 font_Size.addEventListener('change',(event)=>{
-    let newFont = event.target.value;
-    current_cell.style.font_Size = newFont;
+    let newFontSize = event.target.value;
+    console.log(newFontSize);
+    current_cell.style.fontSize = newFontSize + "px";
+})
+
+bui.addEventListener("click", function (e){
+    let target = e.target;
+    let classes = current_cell.classList.value.split(" ");
+    let bold = false;
+    let italic = false;
+    let underline = false;
+
+    for(let i = 0;i<classes.length; i++)
+    {
+        if(classes[i] == "doBold") bold = true;
+        if(classes[i] == "doItalic") italic = true;
+        if(classes[i] == "doUnderline") underline = true;
+    }
+    console.log(classes);
+    if(target!=bui)
+    {
+        if(target.classList[1].split("-")[1] == "bold" && !bold)
+        {
+            current_cell.classList.add("doBold");
+            target.classList.add("shadow");
+            console.log(classes["doBold"]);
+        }
+        else if(target.classList[1].split("-")[1] == "bold" && bold){
+            current_cell.classList.remove("doBold");
+            target.classList.remove("shadow");
+        }
+
+        if(target.classList[1].split("-")[1] == "italic" && !italic)
+        {
+            current_cell.classList.add("doItalic");
+            target.classList.add("shadow");
+        }
+        else if(target.classList[1].split("-")[1] == "italic" && italic){
+            current_cell.classList.remove("doItalic");
+            target.classList.remove("shadow");
+        }
+
+        if(target.classList[1].split("-")[1] == "underline" && !underline)
+        {
+            current_cell.classList.add("doUnderline");
+            target.classList.add("shadow");
+        }
+        else if(target.classList[1].split("-")[1] == "underline" && underline){
+            current_cell.classList.remove("doUnderline");
+            target.classList.remove("shadow");
+        }
+    }
+})
+
+alignment.addEventListener("click", function (e){
+    let target = e.target;
+    let classes = current_cell.classList.value.split(" ");
+    let left = false;
+    let right = false;
+    let justify = false;
+    let center = false;
+
+    for(let i = 0;i<classes.length; i++)
+    {
+        if(classes[i] == "doLeft") left = true;
+        if(classes[i] == "doRight") right = true;
+        if(classes[i] == "doJustify") justify = true;
+        if(classes[i] == "doCenter") center = true;
+    }
+    console.log(classes);
+    if(target!=alignment)
+    {
+        if(target.classList[1].split("-")[2] == "left" && !left)
+        {
+            current_cell.classList.add("doLeft");
+            target.classList.add("shadow");
+            console.log(classes["doBold"]);
+        }
+        else if(target.classList[1].split("-")[2] == "left" && left){
+            current_cell.classList.remove("doLeft");
+            target.classList.remove("shadow");
+        }
+
+        if(target.classList[1].split("-")[2] == "right" && !right)
+        {
+            current_cell.classList.add("doRight");
+            target.classList.add("shadow");
+        }
+        else if(target.classList[1].split("-")[2] == "right" && right){
+            current_cell.classList.remove("doRight");
+            target.classList.remove("shadow");
+        }
+
+        if(target.classList[1].split("-")[2] == "justify" && !justify)
+        {
+            current_cell.classList.add("doJustify");
+            target.classList.add("shadow");
+        }
+        else if(target.classList[1].split("-")[2] == "justify" && justify){
+            current_cell.classList.remove("doJustify");
+            target.classList.remove("shadow");
+        }
+
+        if(target.classList[1].split("-")[2] == "center" && !center)
+        {
+            current_cell.classList.add("doCenter");
+            target.classList.add("shadow");
+        }
+        else if(target.classList[1].split("-")[2] == "center" && center){
+            current_cell.classList.remove("doCenter");
+            target.classList.remove("shadow");
+        }
+    }
+
 })
 
 function getRidCidFromAddress(address) {

@@ -14,14 +14,15 @@ body{
     height:5rem;
     width : 100vw;
     display:flex;
-    justify-content: space-between
+    justify-content: space-between;
+    background-color: lightgray;
+
 }
 
 .formulae_bar{
     margin-top:-0.5rem;
     margin-left: 1rem;
     font-size:1.7rem;
-    /* background-color:lightblue; */
     height:2.5rem;
     width : 100vw;
     
@@ -30,8 +31,6 @@ body{
     top:0px;
     left : 0px;
     position: fixed;
-    
-
 }
 
 .sheets_container{
@@ -91,6 +90,7 @@ body{
 }
 
 .formulae_bar{
+    margin-top:.5px;
     display:flex;
     align-items: center
 }
@@ -177,6 +177,14 @@ body{
 
 .font-selector{
     margin-left: -1.5rem;
+
+}
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgb(87, 84, 84);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .seperators{
@@ -217,4 +225,39 @@ body{
     justify-content:  space-evenly;
     margin-left:-21rem ;
     margin-top: 1rem;
+}
+
+.shadow{
+    box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+              0 1px  6px  rgba(0, 0, 0, .05),
+              0 8px  8px  rgba(0, 0, 0, .1), 
+              0 16px 16px rgba(0, 0, 0, .1), 
+              8px 32px 32px rgba(0, 0, 0, .15), 
+              8px 64px 64px rgba(0, 0, 0, .15);
+}
+
+.doBold{
+    font-weight: bold;
+}
+.doItalic{
+    font-style: italic;
+}
+.doUnderline{
+    text-decoration: underline;
+}
+.doLeft{
+    text-align: left;
+}
+.doRight{
+    text-align: right;
+}
+.doJustify{
+    text-align: justify;
+}
+.doCenter{
+    text-align:center;
+}
+
+.fa-bold,.fa-italic,.fa-underline,.fa-align-right,.fa-align-left,.fa-align-justify,.fa-align-center{
+    border-radius: 5px;
 }
