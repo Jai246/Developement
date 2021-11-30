@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Excel_Clone</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
@@ -28,6 +28,7 @@
                 </div>
                 <div class="open">
                     <i class="far fa-envelope-open fa-fw"></i>
+                    <input type="file" name="" style="display: none;" multiple class="open_input">
                 </div>
                 <div class="save">
                     <i class="far fa-save fa-fw"></i>
@@ -52,15 +53,11 @@
                 </div>
                 <div class="font-size-selector">
                     <select class="font_size_input">
-                        <option value="10">10</option>
-                        <option value="12">12</option>
                         <option value="14">14</option>
                         <option value="18">18</option>
                         <option value="20">20</option>
                         <option value="22">22</option>
                         <option value="24">24</option>
-                        <option value="26">26</option>
-                        <option value="28">28</option>
                     </select>
                 </div>
                 
@@ -75,24 +72,27 @@
                 <div class="underline">
                     <i class="fas fa-underline fa-fw"></i>
                 </div>
-               
+                
             </div>
             <div class="alignment_container">
-                <i class="fas fa-align-right fa-fw"></i>
+                <i class="fas fa-align-left fa-fw"></i>
                 <i class="fas fa-align-center fa-fw"></i>
                 <i class="fas fa-align-justify fa-fw"></i>
-                <i class="fas fa-align-left fa-fw"></i>
+                <i class="fas fa-align-right fa-fw"></i>
                 
             </div>
 
             <div class="color-container">
                 <i class="fas fa-tint fa-fw"></i>
                 <i class="fas fa-fill-drip fa-fw"></i>
+                <input type="color" class="text_color" style="display: none">
+                <input type="color" class="background_color" style="display:none">
             </div>
         </div>
         
         <div class="formulae_bar">
             <div class="address_input"></div>
+            <img src="pngwing.com.png" alt="">
             <div class="formulae_input">
                 <input type="text" class="formulae_input_text" placeholder="Formulae" font="Dancing Script">
             </div>
@@ -107,8 +107,17 @@
         
         <div class="cells"></div>
     </div>
-    <div class="sheets_container"></div>
+    <div class="sheets_container">
+        <div class="add-sheet_container">
+            <i class="fas fa-plus icon"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetIdx="0"> Sheet 1</div>
+        </div>
+    </div>
     <!-- <div class="sheets_container">Sheet Container</div> -->
     <script src="script.js"></script>
+    <script src="newOpenSave.js"></script>
+    <script src="formulae.js"></script>
 </body>
 </html>
