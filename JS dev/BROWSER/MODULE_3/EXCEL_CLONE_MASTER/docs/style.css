@@ -1,0 +1,306 @@
+*{
+    /*Include padding and border in the element's total width and height:*/
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0px;
+    position:relative;
+    font-family:"Dancing Script";
+    font-weight: 600;
+}
+*:focus {
+    outline: none;
+}
+.menu_bar>*{
+    box-shadow: rgb(125, 151, 173) 3px 3px 6px 0px inset, rgba(118, 131, 165, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 20px;
+}
+
+.menu_bar{
+    background-color:white;
+    height:5rem;
+    width : 100vw;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+}
+
+.formulae_bar{
+    margin-top:-0.5rem;
+    margin-left: 1rem;
+    font-size:1.7rem;
+    height:2.5rem;
+    width : 100vw;
+    
+}
+.menuFormulae{
+    top:0px;
+    left : 0px;
+    position: fixed;
+}
+
+.sheets_container{
+    position: relative;
+    top : 118px;
+    background-color:rgb(228, 228, 228);
+    height:3rem;
+    display: flex;
+    align-items: center
+
+
+}
+
+
+.grid_container{
+    top: 7.5rem;
+    margin-left:0px;
+    height:calc(100vh - (5rem + 2rem + 3.5rem));
+    position: relative;
+    overflow-y: scroll;
+}
+.top_row{
+    text-align: auto;
+    background-color:#f1f2f6;
+    width: 132rem;
+    display:flex; /* flex will automatically make top row horizontal*/
+    position: sticky;
+    top: 0rem;
+    left:0rem;
+}
+.cellRows{
+    display:flex;
+    margin-left: 2rem;
+}
+
+.left_Col_Par{
+    position: sticky;
+    left: 0px;
+}
+.left_column{
+    margin-top:-1.5rem ;
+    width: 2rem;
+    position: absolute;
+}
+.leftCell{
+    height:1.5rem;
+    min-width: 2rem;
+    border : 0.02px solid rgb(160, 158, 158);
+    background-color:#f1f2f6;
+    text-align:center;
+}
+
+.cell{
+    text-align: center;
+    border:0.02px solid rgb(160, 158, 158);
+    height:1.5rem;
+    font-size: 14px;
+    min-width:5rem;
+    outline: none; 
+    /* when cell clicked no outline will come */
+}
+
+.formulae_bar{
+    margin-top:.5px;
+    display:flex;
+    align-items: center
+}
+
+.address_input{
+    font-size:1.7rem;
+    text-align: center;
+    margin-left:.5rem;
+    height:2rem;
+    width: 4rem;
+    border : 2px solid black;
+    border-radius: 4px;
+}
+
+.formulae_input{
+    height:2rem;
+    width:  85%;
+    border : 1px solid black;
+    /* border-radius: 5px; */
+    margin-left: 3rem;
+    border-radius: 4px;
+    font-size:1.7rem;
+    
+}
+
+.formulae_input_text{
+    width:100%;
+    height:1.9rem;
+    display:flex;
+    font-size:1.7rem;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    /* border: 1px solid black; */
+}
+
+.delimiterCell{
+    min-width:2rem;
+    /* margin-bottom: 3rem; */
+    height:1.5rem;
+    background-color:rgb(199, 194, 194);
+    border: 1px solid gray;
+    position: sticky;
+    left: 0rem;
+    top: 0rem;
+}
+
+
+/* menu styling */
+.new_open_save{
+    font-size:1.7rem;
+    height: 3rem;
+    width: 15vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+.font_family_input{
+    width : 10.5vw;
+}
+
+.font_family_input,.font_size_input{
+    height: 30px;
+    border:none;
+    border-radius: 18px;
+    font-size:large;
+}
+
+.font-and-size{
+    height : 3rem;
+    width:20vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+select option {
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgb(87, 84, 84);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.seperators{
+    color:gray;
+    font-size:2rem;
+}
+.bold,.italic,.underline{
+    font-size:1.7rem;
+}
+.underline{
+    margin-top:5px;
+}
+
+.bui{
+    font-size:1.7rem;
+    height : 3rem;
+    width:15vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.alignment_container{
+    font-size: 1.7rem;
+    display: flex;
+    height:3rem;
+    width:15vw;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.color-container{
+    font-size:1.7rem;
+    display: flex;
+    width:10vw;
+    height:3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shadow{
+    box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+              0 1px  6px  rgba(0, 0, 0, .05),
+              0 8px  8px  rgba(0, 0, 0, .1), 
+              0 16px 16px rgba(0, 0, 0, .1), 
+              8px 32px 32px rgba(0, 0, 0, .15), 
+              8px 64px 64px rgba(0, 0, 0, .15);
+}
+
+.doBold{
+    font-weight: bold;
+}
+.doItalic{
+    font-style: italic;
+}
+.doUnderline{
+    text-decoration: underline;
+}
+.doLeft{
+    text-align: left;
+}
+.doRight{
+    text-align: right;
+}
+.doJustify{
+    text-align: justify;
+}
+.doCenter{
+    text-align:center;
+}
+.fa-bold,.fa-italic,.fa-underline,.fa-align-right,.fa-align-left,.fa-align-justify,.fa-align-center,.fa-save,.fa-plus-circle,.fa-envelope-open,.fa-tint,.fa-fill-drip{
+    border-radius: 5px;
+}
+
+
+.formulae_bar img{
+    display: inline-block;
+    height: 60%;
+    margin-right:-2.5rem;
+    margin-left:4rem;
+}
+
+.fa-align-center:hover,.fa-align-justify:hover,.fa-align-left:hover,.fa-align-right:hover,.fa-bold:hover,.fa-italic:hover,.fa-underline:hover,.fa-save:hover,.fa-plus-circle:hover,.fa-envelope-open:hover,.fa-tint:hover,.fa-fill-drip:hover,.sheet:hover,.cell:hover{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.sheets_container
+{
+    display : flex;
+}
+
+.sheets-list{
+    display:flex;
+}
+.sheet
+{
+    height: 25px;
+    width: 80px;
+    border: .01px solid;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-align:center;
+}
+.fa-plus{
+    font-size: 1.7rem;
+    margin-left: 5px;
+}
+.active-sheet{
+    box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+              0 1px  6px  rgba(0, 0, 0, .05),
+              0 8px  8px  rgba(0, 0, 0, .1), 
+              0 16px 16px rgba(0, 0, 0, .1), 
+              8px 32px 32px rgba(0, 0, 0, .15), 
+              8px 64px 64px rgba(0, 0, 0, .15);
+
+    background-color: rgba(164, 165, 170, 0.557);
+}
