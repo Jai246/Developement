@@ -18,10 +18,14 @@ body{
 }
 
 .menu_bar{
-    background-color:white;
+    /* background-color:white; */
     height:5rem;
     width : 100vw;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-image:linear-gradient(rgb(224, 163, 163), rgb(0, 0, 0)), url('menuBack4.png');
+    background-size: auto;
+    background-position: center;
+    background-blend-mode: saturation;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
