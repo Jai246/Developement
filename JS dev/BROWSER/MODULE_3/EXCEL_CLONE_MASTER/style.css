@@ -45,9 +45,14 @@ body{
 .sheets_container{
     position: relative;
     top : 118px;
-    background-color:lightgoldenrodyellow;
+    background-color:rgb(228, 228, 228);
     height:3rem;
+    display: flex;
+    align-items: center
+
+
 }
+
 
 .grid_container{
     top: 7.5rem;
@@ -264,10 +269,38 @@ select option {
     margin-left:4rem;
 }
 
-.fa-align-center:hover,.fa-align-justify:hover,.fa-align-left:hover,.fa-align-right:hover,.fa-bold:hover,.fa-italic:hover,.fa-underline:hover,.fa-save:hover,.fa-plus-circle:hover,.fa-envelope-open:hover,.fa-tint:hover,.fa-fill-drip:hover{
+.fa-align-center:hover,.fa-align-justify:hover,.fa-align-left:hover,.fa-align-right:hover,.fa-bold:hover,.fa-italic:hover,.fa-underline:hover,.fa-save:hover,.fa-plus-circle:hover,.fa-envelope-open:hover,.fa-tint:hover,.fa-fill-drip:hover,.sheet:hover,.cell:hover{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.sheets_container{
+.sheets_container
+{
     display : flex;
+}
+
+.sheets-list{
+    display:flex;
+}
+.sheet
+{
+    height: 25px;
+    width: 80px;
+    border: .01px solid;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-align:center;
+}
+.fa-plus{
+    font-size: 1.7rem;
+    margin-left: 5px;
+}
+.active-sheet{
+    box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+              0 1px  6px  rgba(0, 0, 0, .05),
+              0 8px  8px  rgba(0, 0, 0, .1), 
+              0 16px 16px rgba(0, 0, 0, .1), 
+              8px 32px 32px rgba(0, 0, 0, .15), 
+              8px 64px 64px rgba(0, 0, 0, .15);
+
+    background-color: rgba(164, 165, 170, 0.557);
 }

@@ -340,7 +340,7 @@ for(let i = 0;i<=100;i++)
 }
 
 
-let sheetsDB = [];
+let sheetsDB = [[[]]];
 function initDB()
 {
     let db = [];
@@ -367,7 +367,7 @@ function initDB()
         }
         db.push(rowArr);
     }
-    sheetsDB.push(db);
+    sheetsDB[activeSheet] = db;
 }
 
 let db = sheetsDB[0];

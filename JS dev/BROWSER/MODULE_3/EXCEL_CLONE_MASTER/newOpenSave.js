@@ -9,7 +9,7 @@ downloadBtn.addEventListener("click", function (e)
     // anchor create
     let a = document.createElement("a");
     // file put -> db array 
-    var StringCode = encodeURIComponent(JSON.stringify(db));
+    var StringCode = encodeURIComponent(JSON.stringify(sheetsDB[activeSheet]));
     // console.log(StringCode);
     var dataStr = "data:text/json;charset=utf-8," + StringCode;
     a.href = dataStr;
@@ -39,7 +39,8 @@ openInput.addEventListener("change", function (e) {
     reader.addEventListener('load', (event) => {
         // img.src = event.target.result;
         let JSONdata = JSON.parse(event.target.result);
-        db = JSONdata
+        sheetsDB[activeSheet] = JSONdata;
+        db = sheetsDB[activeSheet];
         // console.log(db);
         setUINOS();
         // console.log(db);
