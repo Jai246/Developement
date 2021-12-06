@@ -26,8 +26,8 @@ addSheet.addEventListener("click",function(){
     sheetsList[activeSheet].classList.add("active-sheet");
     sheetDiv.appendChild(newSheet);
 
-    console.log(sheetsList);
-    console.log(sheetsDB.length)
+    // console.log(sheetsList);
+    // console.log(sheetsDB.length)
     // console.log(sheetsDB);
 
     for(let i = 0;i<sheetLength;i++)

@@ -46,6 +46,7 @@ for(let i = 0;i<100;i++)
             div2.setAttribute("children","");
             div2.setAttribute("rid",i);
             div2.setAttribute("cid",j);
+            div2.setAttribute("textAlign","left");
             div2.setAttribute("contentEditable","true");
             div2.innerText = "";
             div2.style.color = "black";
@@ -349,16 +350,17 @@ function initDB()
         for (let j = 0; j < 26; j++) {
             let cellDetails = document.querySelector(`.cellRows .cell[rid='${i}'][cid='${j}']`);
             let list = cellDetails.classList;
+            // console.log(list);
             let cellObject = 
             {
                 color: cellDetails.style.color,
                 backgroundColor: cellDetails.style.backgroundColor,
                 fontFamily: cellDetails.style.fontFamily,
                 fontSize: cellDetails.style.fontSize,
-                halign: cellDetails.style.textAlign,
-                italic: (list.doItalic!=null) ? true : false,
-                underline: (list.doUnderline!=null) ? true : false,
-                bold: (list.doBold!=null) ? true : false,
+                halign: (list.contains("doLeft")) ? "left" : (list.contains("doRight")) ?"right" : (list.contains("doJustify")) ? "justify" : (list.contains("doCenter")) ? "center" : "",
+                italic: (list.contains("doItalic")) ? true : false,
+                underline: (list.contains("doUnderline")) ? true : false,
+                bold: (list.contains("doBold")) ? true : false,
                 value: cellDetails.textContent,
                 formulae: cellDetails.getAttribute("formulae"),
                 children: cellDetails.getAttribute("children")
