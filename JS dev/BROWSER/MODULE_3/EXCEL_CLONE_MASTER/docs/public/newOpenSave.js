@@ -65,7 +65,10 @@ newInput.addEventListener("click", function () {
     UnSetUI();
 })
 
-function UnSetUI() {
+function UnSetUI() 
+{
+    font_Input.selectedIndex = 0;
+    font_Size.selectedIndex = 0;
     for (let i = 0; i < 100; i++) {
         for (let j = 0; j < 26; j++) {
 
