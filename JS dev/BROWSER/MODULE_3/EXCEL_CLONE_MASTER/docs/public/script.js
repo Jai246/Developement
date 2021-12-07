@@ -297,6 +297,8 @@ alignment.addEventListener("click", function (e){
             document.querySelector(".fa-align-center").classList.remove("shadow");
         }
     }
+
+    
     if(target!=alignment)
     {
         if(target.classList[1].split("-")[2] == "left" && !left)

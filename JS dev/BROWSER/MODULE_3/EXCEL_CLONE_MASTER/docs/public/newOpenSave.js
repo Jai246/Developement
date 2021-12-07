@@ -82,7 +82,7 @@ function UnSetUI() {
             tobeChangedCell.style.backgroundColor= "white";
             tobeChangedCell.style.fontFamily= "'Dancing Script'";
             tobeChangedCell.style.fontSize= 14 + "px";
-            tobeChangedCell.classList.add("doLeft");
+            // tobeChangedCell.classList.add("doLeft");
             tobeChangedCell.innerText= "";
             tobeChangedCell.formula= "";
             tobeChangedCell.children= [];
@@ -108,7 +108,7 @@ function setUINOS() {
                 tobeChangedCell.classList.add("doLeft");
                 console.log("done");
             }
-            if(align == "right") {
+            else if(align == "right") {
                 tobeChangedCell.classList.add("doRight");
             }
             else if(align == "justify") {
