@@ -1,0 +1,53 @@
+body 
+{
+    margin: 0px;
+    display:flex;
+    justify-content: center
+}
+/* .canva{
+    cursor: url("cursorPencil.png") -35 35 ,auto;
+} */
+.tools
+{
+    margin-top:10px;
+    background-color: rgb(231, 231, 90);
+    border-radius: 30px;
+    position: absolute;
+    height: 4rem;
+    width: calc(100vw - 100vw/7);
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.color{
+    height: 3.5rem;
+    width: 3.5rem;
+    /* border: solid black 1px; */
+    border-radius: 40px;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color:rgb(245, 153, 168);
+}
+.black{
+    background-color:black;
+}
+.blue{
+    background-color:rgb(109, 203, 235);
+}
+.green{
+    background-color:rgb(119, 230, 119);
+}
+.fas {
+    font-size: 2rem;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.img{
+    height: 3rem;
+    width : 3rem;
+}

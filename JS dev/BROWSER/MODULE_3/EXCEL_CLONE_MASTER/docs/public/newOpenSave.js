@@ -11,9 +11,6 @@ let justify = document.querySelector(".fa-align-justify");
 let center = document.querySelector(".fa-align-center");
 
 
-
-
-
 downloadBtn.addEventListener("click", function (e) 
 {
     initDB();
