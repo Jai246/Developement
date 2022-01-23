@@ -1,0 +1,270 @@
+body 
+{
+    user-select: none;
+    margin: 0px;
+    display:flex;
+    justify-content: center;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.tools{
+    margin-top:10px;
+    background-color: rgb(160, 160, 152);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: absolute;
+    height: 4.5rem;
+    width: calc(100vw - 100vw/2);
+    min-width: 35rem;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.pencilToolBox{
+    display : flex;
+    justify-content:space-evenly;
+    border-radius: 10px;
+    flex-direction:column;
+    align-items: center;
+}
+.shapes{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(209, 186, 186);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    min-width: 5rem;
+    min-height: 10rem;
+    float:right;
+    position:absolute;
+    bottom:calc(100vh - 100vh/1.5);
+    border-radius:15px;
+    right:15px;
+}
+.shapesHideBox{
+    margin-top: 15px;
+}
+.optionsEraser{
+    display : flex;
+    background-color: rgb(238, 215, 215);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    min-width: 5rem;
+    float:right;
+    position:absolute;
+    bottom:calc(100vh - 100vh/1.5);
+    right:15px;
+    border-radius:30px;
+}
+.eraserToolBox{
+    display : flex;
+    flex-direction:column;
+    align-items: center;
+}
+.eraserSizes{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 17rem;
+}
+.optionsPencil{
+    display : flex;
+    background-color: rgb(209, 186, 186);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    
+    min-width: 12.3rem;
+    min-height: 10rem;
+    float:right;
+    position:absolute;
+    bottom:calc(100vh - 100vh/1.5);
+    border-radius:15px;
+    right:15px;
+}
+.pencilHideBox,.eraserHideBox{
+    margin-top: 15px;
+}
+.size1,.size2,.size3,.size4,.size5{
+    width : 2.5rem;
+}
+.highlight{
+    border: 3px solid rgb(56, 54, 54);
+    border-radius: 30px;
+}
+.sizes{
+    margin-top: 15px;
+    margin-left: -48px;
+    display : flex;
+    width:10rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.colorTab{
+    display : flex;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 12.2rem;
+}
+.c1,.c2,.c3{
+    display : flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.color{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 40px;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color:rgb(245, 153, 168);
+}
+.black{
+    background-color:black;
+}
+.blue{
+    background-color:rgb(109, 203, 235);
+}
+.green{
+    background-color:rgb(119, 230, 119);
+}
+.Palatinate{
+    background-color:  rgb(39, 39, 208);
+}
+.Steel_Pink{
+    background-color:rgb(205, 38, 225);
+}
+.Bright_Green{
+    background-color:rgb(98, 223, 8);
+}
+.Macaroni_And_Cheese{
+    background-color:rgb(255, 189, 140);
+}
+.Spring_Bud{
+    background-color:rgb(175, 249, 1);
+}
+.Pale_Pink{
+    background-color:  rgb(249, 213, 213);
+}
+.Lemon_Chiffon{
+    background-color:rgb(251, 244, 205);
+}
+.Bright_Ube{
+    background-color:rgb(211, 174, 233);
+}
+.Lenurple{
+    background-color:rgb(187, 139, 223);
+}
+.Pearl_Aqua{
+    background-color:rgb(126, 199, 185);
+}
+.fas {
+    font-size: 2rem;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.img{
+    height: 4rem;
+    width : 4rem;
+}
+
+.stickyNotesBox{
+    border-radius:20px 20px 0px 0px;
+    position: absolute;
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    height : 20rem;
+    width : 14rem;
+    bottom:calc(100vh - 100vh/1.5);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.head{
+    border-radius:20px 20px 0px 0px;
+    height: 2.5rem;
+    width: 14.2rem;
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.stickyNotesBox.active{
+    cursor: move;
+    user-select: none;
+}
+textarea{
+    height : 17.5rem;
+    width: 14rem;
+    box-sizing:border-box;
+    border:none;
+    outline: none;
+    resize: none;
+    font-size: 1.4rem;
+    font-family: "Dancing Script";
+    font-weight: 600;
+    text-align:justify;
+    background-color: rgb(231, 227, 227);
+}
+.close{
+    margin-right: 4px;
+    background-color: red;
+}
+.minimize{
+    margin-right: 4px;
+    background-color:greenyellow;
+}
+.minimize,.close{
+    align-items: center;
+    float:right;
+    display : flex;
+    height : 1rem;
+    width: 1rem;
+    border-radius: 10px;
+
+}
+.popout{
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+    from{transform:scale(0)};
+    80%{transform:scale(1.2)};
+    to{transform:scale(1)};
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+@keyframes popup {
+    from{transform:scale(1)}
+    100%{transform:scale(1.4)}
+}
+@-webkit-keyframes popup {
+    from{-webkit-transform:scale(1)}
+    100%{-webkit-transform:scale(1.4)}
+}
+
+.pencil:hover,.eraser:hover,.note:hover,.undo:hover,.fas:hover,.color:hover,.redo:hover,.shape:hover,.trash:hover,.line:hover,.rectangle:hover,.circle:hover,.triangle:hover{
+    animation: popup 0.2s ease;
+    -webkit-animation: popup 0.2s ease;
+    transform:scale(1.2);
+}
+
+.pencil:active,.eraser:active,.note:active,.undo:active,.redo:active,.shape:active,.trash:active,.pencilHideBox:active,.eraserHideBox:active,.fas:active,.line:active,.rectangle:active,.circle:active,.triangle:active,.shapesHideBox:active{
+    transform: scale(0.8);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    border-radius:20px;
+}
+

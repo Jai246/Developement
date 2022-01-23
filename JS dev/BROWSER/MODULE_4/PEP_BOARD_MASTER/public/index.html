@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteBoard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+</head>
+
+<body>
+
+    <div  class = "tools popout" style = "cursor : pointer">
+        <!-- <i class="fas fa-square fa-3x"></i>
+        <i class="fas fa-grip-lines-vertical fa-3x"></i> -->
+        <div class="pencil">
+            <img class = "img" src="pencil.png">
+        </div>
+        <div class="eraser">
+            <img class = "img" src="eraser.png">
+        </div>
+        <div class="undo">
+            <img class = "img" src="undo.png">
+        </div>
+        <div class="redo">
+            <img class = "img" src="redo.png">
+        </div>
+        <div class="note">
+            <img class = "img" src="note.png">
+        </div>
+        <div class="shape">
+            <img class = "img" src="shapes.png">
+        </div>
+        <div class="trash">
+            <img class = "img" src="trash.png">
+        </div>        
+    </div>
+
+    <div class = "optionsPencil popout" style = "cursor : pointer">
+        <div class="pencilToolBox">
+
+            <div class="displayBox">
+                <div class="sizeDisp"></div>
+                <div class="colorDisp"></div>
+            </div>
+            <div class="sizes" style="font-size: 0.3rem;">
+                <div class="size1 pen">
+                    <i class="fas fa-circle fa-2x"></i>
+                </div>
+                <div class="size2 pen">
+                    <i class="fas fa-circle fa-3x"></i>
+                </div>
+                <div class="size3 pen">
+                    <i class="fas fa-circle fa-4x"></i>
+                </div>
+                <div class="size4 pen">
+                    <i class="fas fa-circle fa-5x"></i>
+                </div>
+                <div class="size5 pen">
+                    <i class="fas fa-circle fa-6x"></i>
+                </div>
+            </div>
+            <div class="colorTab">
+                <div class="c1">
+                    <div class="color red" > </div>
+                    <div class="color pink"></div>
+                    <div class="color black"></div>
+                    <div class="color blue"></div>
+                    <div class="color green"></div>
+                </div>
+
+                <div class="c2">
+                    <div class="color Palatinate" > </div>
+                    <div class="color Steel_Pink"></div>
+                    <div class="color Bright_Green"></div>
+                    <div class="color Spring_Bud"></div>
+                    <div class="color Macaroni_And_Cheese"></div>
+                </div>
+
+
+                <div class="c3">
+                    <div class="color Pale_Pink" > </div>
+                    <div class="color Lemon_Chiffon"></div>
+                    <div class="color Bright_Ube"></div>
+                    <div class="color Lenurple"></div>
+                    <div class="color Pearl_Aqua"></div>
+                </div>
+                
+            </div>
+            
+
+            <div class="pencilHideBox">
+                <img class = "img" src="close.png">
+            </div>
+        </div>
+    </div>
+    <div class="optionsEraser popout">
+        <div class = "eraserToolBox">
+            <div class="displayBoxEraser"></div>
+            <div class="eraserSizes " style="font-size: 0.4rem;">
+                <div class="sizeEraser1 erase">
+                    <i class="fas fa-circle fa-2x"></i>
+                </div>
+                <div class="sizeEraser2 erase">
+                    <i class="fas fa-circle fa-3x"></i>
+                </div>
+                <div class="sizeEraser3 erase">
+                    <i class="fas fa-circle fa-4x"></i>
+                </div>
+                <div class="sizeEraser4 erase">
+                    <i class="fas fa-circle fa-5x"></i>
+                </div>
+                <div class="sizeEraser5 erase">
+                    <i class="fas fa-circle fa-6x"></i>
+                </div>
+                <div class="eraserHideBox">
+                    <img class = "img" src="close.png">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="stickyNotesBox popout">
+        <div class="head">
+            <div class="minimize">
+
+            </div>
+            <div class="close">
+
+            </div>
+        </div>
+        <div class="text">
+            <textarea></textarea>
+        </div>
+    </div>
+
+    <div class="shapes popout">
+        <div class="line">
+            <img class = "img" src="line.png">
+        </div>
+        <div class="rectangle">
+            <img class = "img" src="rectangle.png">
+        </div>
+        <div class="circle">
+            <img class = "img" src="circle.png">
+        </div>
+        <div class="triangle">
+            <img class = "img" src="triangle.png">
+        </div>
+        <div class="shapesHideBox">
+            <img class = "img" src="close.png">
+        </div>
+    </div>
+    <canvas class="canva"> </canvas>
+</body>
+
+<script>
+    let canvasBoard = document.querySelector(".canva");
+    let pencilHideBox = document.querySelector(".pencilHideBox");
+    let shapesHideBox = document.querySelector(".shapesHideBox");
+    let optionsShapes = document.querySelector(".shapes");
+    let shape = document.querySelector(".shape");
+    let clearAll = document.querySelector(".trash");
+    let line = document.querySelector(".line");
+    let rectangle = document.querySelector(".rectangle");
+    let circle = document.querySelector(".circle");
+    let triangle = document.querySelector(".triangle");
+    let eraserHideBox = document.querySelector(".eraserHideBox");
+    let optionsPencil = document.querySelector(".optionsPencil");
+    let optionsEraser = document.querySelector(".optionsEraser");
+    let stickyNotesBox = document.querySelector(".stickyNotesBox");
+    let openNotes = document.querySelector(".note");
+    let optionsPencilVisible = false;
+    let optionsEraserVisible = false;
+    let undoBtn = document.querySelector(".undo");
+    let redoBtn = document.querySelector(".redo");
+    // let rectTool = document.querySelector(".fa-square");
+    let lineTool = document.querySelector(".pencil");
+    let eraser = document.querySelector(".eraser");
+    let body = document.querySelector("body");
+    let cTool = "lineTool";
+    let drawingMode = false;
+    let dragMode = false;
+    let colors = document.querySelectorAll(".color");
+    let pencilSizes = document.querySelectorAll(".pen");
+    let eraserSizes = document.querySelectorAll(".erase");
+    let points = [];
+    let strokeSizesPencil = [2.5,4.5,6.5,10.5,12.5];
+    let strokeSizesEraser = [10,20,30,40,50];
+    let closeBox = document.querySelector(".close");
+    let minimize = document.querySelector(".minimize");
+    let textArea = document.querySelector(".text");
+    let beginPoint;
+    let undoStack = [];
+    let redoStack = [];
+
+
+
+    canvasBoard.style.width = "100hw";
+    canvasBoard.style.height = "100vh";  
+    stickyNotesBox.style.display = "none";
+    optionsPencil.style.display = "none";
+    optionsEraser.style.display = "none";
+    optionsShapes.style.display = "none";
+    // default height width is smaller 
+    canvasBoard.height = window.innerHeight;
+    canvasBoard.width = window.innerWidth;
+    // this line gives you the tool to draw on that canvas
+
+    let tool = canvasBoard.getContext("2d");
+    tool.lineCap = 'round';
+    tool.lineJoin = 'round';
+    tool.lineWidth = 2.5;
+    tool.strokeStyle = 'rgb(109, 203, 235)';
+
+
+
+    let globalTarget =null;
+    body.addEventListener("click",function(e){
+        globalTarget = e.target;
+    })
+
+    clearAll.addEventListener("click",function(){
+        tool.clearRect(0, 0, canvasBoard.width, canvasBoard.height);
+        redoStack = [];
+        undoStack = [];
+    })
+
+    for(let i = 0;i<colors.length;i++){
+        colors[i].classList.add("highlight");
+    }
+
+    pencilHideBox.addEventListener("click",function(){
+        drawingMode = false;
+        optionsPencil.style.display = "none";
+        optionsPencilVisible = false;
+    });
+
+    shapesHideBox.addEventListener("click",function(){
+        drawingMode = false;
+        optionsShapes.style.display = "none";
+        optionsPencilVisible = false;
+    });
+
+    eraserHideBox.addEventListener("click",function(){
+        drawingMode = false;
+        optionsEraser.style.display = "none";
+        optionsEraserVisible = false;
+    });
+
+    openNotes.addEventListener("click",function(){
+        drawingMode = false;
+        stickyNotesBox.style.display = "block";
+    });
+
+    closeBox.addEventListener("click",function(){
+        drawingMode = false;
+        if(stickyNotesBox.style.display == "none") return;
+        stickyNotesBox.style.display = "none";
+    });
+    minimize.addEventListener("click",function(){
+        drawingMode = false;
+        if(stickyNotesBox.style.display == "none") return;
+        if(textArea.style.display == "none") {
+            textArea.style.display = "block";
+            stickyNotesBox.style.height = "20rem";
+        }
+        else {
+            textArea.style.display = "none";
+            stickyNotesBox.style.height = "2.5rem";
+        }
+    })
+
+    for(let i = 0;i<pencilSizes.length;i++)
+    {
+        pencilSizes[i].addEventListener("click", function (e){
+            tool.lineWidth = strokeSizesPencil[i];
+        })
+    }
+
+    for(let i = 0;i<eraserSizes.length;i++)
+    {
+            eraserSizes[i].addEventListener("click", function (e){
+            tool.lineWidth = strokeSizesEraser[i];
+        })
+    }
+
+    for(let i = 0;i<colors.length; i++)
+    {
+        colors[i].addEventListener("click",function(e){
+            let target = e.target;
+            let classList = target.classList;
+
+            if(classList[1] == 'red'){
+                tool.strokeStyle = 'red';
+            }
+            else if(classList[1] == 'pink'){
+                tool.strokeStyle = 'pink';
+            }
+            else if(classList[1] == 'black'){
+                tool.strokeStyle = 'black';
+            }
+            else if(classList[1] == 'blue'){
+                tool.strokeStyle = 'rgb(134, 208, 233)';
+            }
+            else if(classList[1] == 'green'){
+                tool.strokeStyle = 'Lightgreen';
+            }
+            else if(classList[1] == 'Palatinate'){
+                tool.strokeStyle = 'rgb(39, 39, 208)';
+            }
+            else if(classList[1] == 'Steel_Pink'){
+                tool.strokeStyle = 'rgb(205, 38, 225)';
+            }
+            else if(classList[1] == 'Bright_Green'){
+                tool.strokeStyle = 'rgb(98, 223, 8)';
+            }
+            else if(classList[1] == 'Macaroni_And_Cheese'){
+                tool.strokeStyle = 'rgb(255, 189, 140)';
+            }
+            else if(classList[1] == 'Spring_Bud'){
+                tool.strokeStyle = 'rgb(175, 249, 1)';
+            }
+            else if(classList[1] == 'Pale_Pink'){
+                tool.strokeStyle = 'rgb(249, 213, 213)';
+            }
+            else if(classList[1] == 'Lemon_Chiffon'){
+                tool.strokeStyle = 'rgb(251, 244, 205)';
+            }
+            else if(classList[1] == 'Bright_Ube'){
+                tool.strokeStyle = 'rgb(211, 174, 233)';
+            }
+            else if(classList[1] == 'Lenurple'){
+                tool.strokeStyle = 'rgb(187, 139, 223)';
+            }
+            else if(classList[1] == 'Pearl_Aqua'){
+                tool.strokeStyle = 'rgb(126, 199, 185)';
+            }
+        })
+    }
+
+    shape.addEventListener("click",function(){
+        drawingMode = false;
+        optionsShapes.style.display = "flex";
+        optionsPencilVisible = true;
+        drawingMode = true;
+        optionsEraser.style.display = "none";
+        optionsPencil.style.display = "none";
+    });
+
+
+    eraser.addEventListener("click",function(){
+        drawingMode = false;
+        cTool = "eraser";
+        tool.lineWidth = strokeSizesEraser[0];
+        canvasBoard.style.cursor = "url('cursorEraser.png') -30 35, auto";
+        tool.strokeStyle = "#ffffff";
+        optionsEraser.style.display = "flex";
+        optionsEraserVisible = true;
+        optionsPencil.style.display = "none";
+        optionsShapes.style.display = "none";
+
+    })
+    lineTool.addEventListener("click", function() 
+    {
+        drawingMode = false;
+        tool.lineWidth = strokeSizesPencil[0];
+        canvasBoard.style.cursor = "url('cursorPencil.png') -35 35, auto";
+        cTool = "lineTool";
+        optionsPencil.style.display = "flex";
+        optionsPencilVisible = true;
+        drawingMode = true;
+        optionsEraser.style.display = "none";
+        optionsShapes.style.display = "none";
+    })
+
+
+    // canavas board -> top point kitna niche hai 
+    let boardTop = canvasBoard.getBoundingClientRect().top;
+    // canavas board -> left  point kitna aage  hai 
+    let boardLeft = canvasBoard.getBoundingClientRect().left;
+
+    let iX, iY, fX, fY;
+
+    body.addEventListener("mousedown",function (e)
+    {
+        if(tool.strokeStyle == "#ffffff" && cTool!="eraser")
+        {
+            tool.strokeStyle = 'rgb(134, 208, 233)';
+        }
+        if(tool.lineWidth == 10 && cTool!="eraser") {
+            tool.lineWidth = 2.5;
+        }
+        drawingMode = true;
+        iX = e.clientX-boardLeft;
+        iY = e.clientY+boardTop;
+        let po = {
+            x : iX,
+            y : iY
+        }
+        tool.moveTo(iX, iY);
+        // console.log("hello");
+        points.push(po);
+        beginPoint = po;
+    })
+    // Stroke Style Before Using Eraser
+    let prevStrokeStyle = "";
+    let prevStrokeSize = 0;
+    body.addEventListener("mousemove", function (e)
+    {
+        if(cTool == "triangle" || cTool == "rectangle" || cTool == "line" || cTool == "circle") return;
+        if (drawingMode == false || dragMode == true || beginPoint == null) return;
+        redoStack = [];
+        fX = e.clientX - boardLeft;
+        fY = e.clientY - boardTop;
+        
+        let po = {
+            x : fX,
+            y : fY
+        }
+        points.push(po);
+
+        if (points.length > 3) 
+        {
+            const lastTwoPoints = points.slice(-2);
+            const controlPoint = lastTwoPoints[0];
+            const endPoint = {
+                x: (lastTwoPoints[0].x + lastTwoPoints[1].x) / 2,
+                y: (lastTwoPoints[0].y + lastTwoPoints[1].y) / 2,
+            }
+            let pt = {
+                start : Object.create(beginPoint),
+                last : Array.from(lastTwoPoints),
+                end : Object.create(endPoint),
+                width : tool.lineWidth,
+                color : tool.strokeStyle,
+                tool : cTool,
+                endShapes : 0,
+                left : 0,
+                radius : 0,
+
+            }
+            undoStack.push(pt);
+            tool.beginPath();
+            tool.moveTo(beginPoint.x, beginPoint.y);
+            tool.quadraticCurveTo(controlPoint.x, controlPoint.y, endPoint.x, endPoint.y);
+            tool.stroke();
+            tool.closePath();
+            beginPoint = endPoint;
+            
+            
+        }
+        iX = fX;
+        iY = fY;
+        // console.log(beginPoint);
+    })
+
+    line.addEventListener("click",function(){
+        cTool = "line";
+        canvasBoard.style.cursor = "url('cursorPencil.png') -35 35, auto";
+    });
+
+    rectangle.addEventListener("click",function(){
+        cTool = "rectangle";
+        canvasBoard.style.cursor = "url('cursorPencil.png') -35 35, auto";
+    });
+
+    circle.addEventListener("click",function(){
+        cTool = "circle";
+        canvasBoard.style.cursor = "url('cursorPencil.png') -35 35, auto";
+    });
+
+    triangle.addEventListener("click",function(){
+        cTool = "triangle";
+        canvasBoard.style.cursor = "url('cursorPencil.png') -35 35, auto";
+    });
+    
+    body.addEventListener("mouseup", function (e)
+    {
+        // console.log("mouseup");
+        fX = e.clientX-boardLeft;
+        fY = e.clientY+boardTop;
+        let width = fX - iX;
+        let height = fY - iY;
+        if (cTool == "rectangle") 
+        {
+            tool.strokeRect(iX, iY, width, height);
+            let pt = {
+                start : Object.create(beginPoint),
+                last : null,
+                end : {x : fX , y : fY},
+                width : tool.lineWidth,
+                color : tool.strokeStyle,
+                tool : cTool,
+                endShapes : 0,
+                left : 0,
+                radius : 0,
+                }
+            undoStack.push(pt);
+        }
+        else if(cTool == "line")
+        {
+            tool.moveTo(beginPoint.x, beginPoint.y);
+            tool.lineTo(fX, fY);
+            tool.fill();
+            tool.stroke();
+            tool.closePath();
+            let pt = {
+                start : Object.create(beginPoint),
+                last : null,
+                end : {x : fX , y : fY},
+                width : tool.lineWidth,
+                color : tool.strokeStyle,
+                tool : cTool,
+                endShapes : 0,
+                left : 0,
+                radius : 0,
+                }
+            undoStack.push(pt);
+        }
+        else if(cTool == "triangle")
+        {
+            let newPtLeft = fX;
+            let newPtRight = newPtLeft+Math.abs(fX - beginPoint.x)*2;
+
+            let pt = {
+                start : Object.create(beginPoint),
+                last : null,
+                end : {x:fX,y:fY},
+                width : tool.lineWidth,
+                color : tool.strokeStyle,
+                tool : cTool,
+                endShapes : 0,
+                left : newPtLeft,
+                radius : 0,
+                }
+
+            tool.lineTo(newPtLeft,fY);
+            tool.stroke();
+            tool.moveTo(beginPoint.x, beginPoint.y);
+            tool.lineTo(newPtRight,fY);
+            tool.stroke();
+            tool.moveTo(newPtLeft,fY);
+            tool.lineTo(newPtRight,fY);
+            tool.stroke();
+            tool.beginPath();
+            tool.closePath();
+            undoStack.push(pt);
+            
+        }
+        else if(cTool == "circle")
+        {
+            tool.beginPath();
+            let rad = Math.abs((fX-beginPoint.x)/1.5);
+            let pt = {
+                    start : {x : beginPoint.x+rad,y : beginPoint.y+rad},
+                    last : null,
+                    end : null,
+                    width : tool.lineWidth,
+                    color : tool.strokeStyle,
+                    tool : cTool,
+                    endShapes : 0,
+                    left : 0,
+                    radius : rad,
+                } 
+            tool.arc(beginPoint.x+rad, beginPoint.y+rad, rad, 0, 2 * Math.PI);
+            tool.stroke();
+            undoStack.push(pt);
+        }
+        else if(cTool == "lineTool" || cTool == "eraser")
+        {
+            const {x,y} = {width, height};
+            points.push({x,y});
+            if (points.length > 3) 
+            {
+                const lastTwoPoints = points.slice(-2);
+                const controlPoint = lastTwoPoints[0];
+                const endPoint = lastTwoPoints[1];
+                let pt = {
+                    start : Object.create(beginPoint),
+                    last : Array.from(lastTwoPoints),
+                    end : Object.create(endPoint),
+                    width : tool.lineWidth,
+                    color : tool.strokeStyle,
+                    tool : cTool,
+                    endShapes : 0,
+                    left : 0,
+                    radius : 0,
+                }
+                undoStack.push(pt);
+                tool.beginPath();
+                tool.moveTo(beginPoint.x, beginPoint.y);
+                tool.quadraticCurveTo(controlPoint.x, controlPoint.y, endPoint.x, endPoint.y);
+                tool.stroke();
+                tool.closePath();
+                beginPoint = endPoint;
+
+                
+            }
+        }
+        tool.beginPath();
+        tool.closePath();
+        beginPoint = null;
+        points = [];
+        drawingMode = false;
+    });
+
+    // undo redo logic
+
+    undoBtn.addEventListener("click",undoDraw);
+    redoBtn.addEventListener("click",redoDraw);
+    function undoDraw()
+    {
+        if(undoStack.length == 0) return;
+        drawingMode = false;
+        tool.clearRect(0, 0, canvasBoard.width, canvasBoard.height);
+        let n = 0;
+        if(undoStack[undoStack.length-1].tool == "lineTool" || undoStack[undoStack.length-1].tool == "eraser") n = Math.min(25,undoStack.length);
+        else n = Math.min(2,undoStack.length);
+        for(let i = 0;i<n;i++){
+            redoStack.push(undoStack.pop());   
+        } 
+        
+        for(let i = 0;i<undoStack.length;i++)
+        {
+            let pts = undoStack[i];
+            let begin = pts.start;
+            
+            let end = pts.end;
+            let width = pts.width;
+            let color = pts.color;
+            let prevColor = tool.strokeStyle;
+            let prevWidth = tool.lineWidth;
+            tool.strokeStyle = color;
+            tool.lineWidth = width;
+
+            if(pts.tool == "line")
+            {
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(pts.end.x, pts.end.y);
+                tool.fill();
+                tool.stroke();
+                tool.closePath();
+            }
+            else if(pts.tool == "triangle")
+            {
+                let newPtLeft = pts.left;
+                let newPtRight = newPtLeft+Math.abs(newPtLeft - pts.start.x)*2;
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(newPtLeft,pts.end.y);
+                tool.stroke();
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(newPtRight,pts.end.y);
+                tool.stroke();
+                tool.moveTo(newPtLeft,pts.end.y);
+                tool.lineTo(newPtRight,pts.end.y);
+                tool.stroke();
+                tool.beginPath();
+                tool.closePath();
+            }
+            else if(pts.tool == "rectangle")
+            {
+                let width = pts.end.x - pts.start.x;
+                let height = pts.end.y - pts.start.y;  
+                tool.strokeRect(pts.start.x, pts.start.y, width, height);
+            }
+            else if(pts.tool == "circle")
+            {
+                tool.beginPath();
+                // tool.moveTo(pts.start.x, pts.start.y);
+                tool.arc(pts.start.x, pts.start.y, Math.abs(pts.radius), 0, 2 * Math.PI);
+                tool.stroke();
+            }
+            else {
+                let last = pts.last;
+                let controlPoint = last[0];
+                
+                
+                tool.beginPath();
+                tool.moveTo(begin.x, begin.y);
+                tool.quadraticCurveTo(controlPoint.x, controlPoint.y, end.x, end.y);
+                tool.stroke();
+                tool.closePath();
+
+                tool.lineWidth = prevWidth;
+                tool.strokeStyle = prevColor;
+            }
+
+            
+
+        }
+    }
+    function redoDraw()
+    {
+        if(redoStack.length == 0) return;
+        drawingMode = false;
+        let n = 0;
+        if(redoStack[redoStack.length-1].tool == "lineTool" || redoStack[redoStack.length-1].tool == "eraser") n = Math.min(25,redoStack.length);
+        else n = Math.min(2,redoStack.length);
+        for(let i = 0;i<n;i++)
+        {
+            let pts = redoStack.pop();
+
+            let width = pts.width;
+            let color = pts.color;
+            let prevColor = tool.strokeStyle;
+            let prevWidth = tool.lineWidth;
+            tool.strokeStyle = color;
+            tool.lineWidth = width;
+            
+
+            if(pts.tool == "line")
+            {
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(pts.end.x, pts.end.y);
+                tool.fill();
+                tool.stroke();
+                tool.closePath();
+                undoStack.push(pts);
+            }
+            else if(pts.tool == "triangle")
+            {
+                let newPtLeft = pts.end.x;
+                let newPtRight = newPtLeft+Math.abs(newPtLeft - pts.start.x)*2;
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(newPtLeft,pts.end.y);
+                tool.stroke();
+                tool.moveTo(pts.start.x, pts.start.y);
+                tool.lineTo(newPtRight,pts.end.y);
+                tool.stroke();
+                tool.moveTo(newPtLeft,pts.end.y);
+                tool.lineTo(newPtRight,pts.end.y);
+                tool.stroke();
+                tool.beginPath();
+                tool.closePath();
+                undoStack.push(pts);
+            }
+            else if(pts.tool == "rectangle")
+            {
+                let width = pts.end.x - pts.start.x;
+                let height = pts.end.y - pts.start.y;  
+                tool.strokeRect(pts.start.x, pts.start.y, width, height);
+                undoStack.push(pts);
+            }
+            else if(pts.tool == "circle")
+            {
+                tool.beginPath();
+                // tool.moveTo(pts.start.x, pts.start.y);
+                tool.arc(pts.start.x, pts.start.y, pts.radius, 0, 2 * Math.PI);
+                tool.stroke();
+                undoStack.push(pts);
+            }
+            else{
+                undoStack.push(pts);
+                let begin = pts.start;
+                let last = pts.last;
+                let end = pts.end;
+                const controlPoint = last[0];
+                
+                tool.beginPath();
+                tool.moveTo(begin.x, begin.y);
+                tool.quadraticCurveTo(controlPoint.x, controlPoint.y, end.x, end.y);
+                tool.stroke();
+                tool.closePath();
+
+                tool.lineWidth = prevWidth;
+                tool.strokeStyle = prevColor;
+            }
+
+            
+        }
+    }
+
+    // drag logic
+    function onDrag({movementX,movementY})
+    {
+        drawingMode = false;
+        let getStyle = window.getComputedStyle(stickyNotesBox);
+        let left = parseInt(getStyle.left);
+        let top = parseInt(getStyle.top);
+        // console.log(left,top);
+        stickyNotesBox.style.left = `${left + movementX}px`;
+        stickyNotesBox.style.top = `${top + movementY}px`;
+    }
+
+    stickyNotesBox.addEventListener("mousedown",()=>{
+        drawingMode = false;
+        dragMode = true;
+        stickyNotesBox.classList.add("active");
+        stickyNotesBox.addEventListener("mousemove",onDrag)
+    });
+    document.addEventListener("mouseup",()=>{
+        drawingMode = true;
+        dragMode = false;
+        stickyNotesBox.classList.remove("active");
+        stickyNotesBox.removeEventListener("mousemove",onDrag);
+    })
+    </script>
+</html>
