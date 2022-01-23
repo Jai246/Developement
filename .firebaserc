@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "excelclone-ba897"
-  }
+    "default": "excelclone-ba897",
+    "WhiteBoard": "whiteboard-4e540"
+  },
+  "targets": {}
 }
