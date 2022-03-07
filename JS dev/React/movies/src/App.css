@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.body{
+  display: flex;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-parent{
+  height : 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.banner-img{
+  display: flex;
+  align-items:center;
+  width: 84.4vw;
+  height : 85vh;
+}
+
+.banner-card
+{
+  width : 85vw;
+  height : 85vh;
+  position: relative;
+  padding : 5px;
+}
+
+.banner-text {
+  position : absolute;
+  top : 75vh;
+  right : 10vw;
+  font-size: 1rem;
+  color: white;
+}
+
+
+.movies-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.movies-card
+{
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  width: 20vw;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+  .card-parent
+  {
+    height : 55vh;
+  }
+  .banner-card
+  {
+    height : 50vh;
+  }
+  .banner-img
+  {
+    height : 50vh;
+  }
+  .movies-card
+  {
+    padding: 2px;
+    display: flex;
+    width: 40vw;
+    height : 30vh;
+  }
+  .movies-title {
+    font-size: 0.7rem;
+  }
+  .movies-button{
+    display: flex;
+    height : 5vh;
+    width : 20vw;
+    font-size:0.5rem;
+    position: absolute;
+    bottom : 10px;
+    left : 35px;    
+  }
+}
