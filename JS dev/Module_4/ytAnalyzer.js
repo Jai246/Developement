@@ -24,14 +24,12 @@ let page;
     let element = await page.$('h1[id="title"]');
     let value = await page.evaluate(function cb(element){// It's kind of a query selector,Alternative of Cheerio
         return element.textContent;
-    }
-    , element);
+    }, element);
     // all occurences F
     // 21
     console.log("Title", value)
     // $$ gives us the whole array of elements with the matched selectors
     // where as $ gives us the 1 matched element
-
     // this will give us 
     
     let someList = await page.$$(".style-scope.ytd-playlist-sidebar-primary-info-renderer");

@@ -39,8 +39,6 @@ console.log(typeof(thenNpromise));
 console.log(typeof(catchNpromise));
 
 // here we can say that a promise is also a kind of a object
-
-
 // printing of data will always be done at the end
 // like the async functions
 

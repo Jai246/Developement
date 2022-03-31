@@ -23,7 +23,8 @@ function myPromisiedFsReader(filePath) {
 //     console.log("err " + err);
 // })
 
-(async function fn() {
+(async function fn() 
+{
     try {
         let promise = myPromisiedFsReader("f1.txt");
         let data = await promise;

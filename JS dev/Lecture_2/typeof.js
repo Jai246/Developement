@@ -9,6 +9,6 @@ function fn() {
 }
 // typeof  arr is object
 console.log(typeof arr);
-console.log(Array.isArray(10));
+console.log(Array.isArray(arr));
 // functions
 console.log(typeof fn);

@@ -1,4 +1,3 @@
-'use strict';
 const loginLink = "https://www.hackerrank.com/auth/login";
 const emailpassObj = require("./secrets");
 const codesObj = require("./codes");
@@ -14,8 +13,10 @@ let browserStartPromise = puppeteer.launch({
     args: ["--start-maximized", "--disable-notifications"]
 });
 let page, browser;
-(async function fn() {
-    try {
+(async function fn() 
+{
+    try 
+    {
         let browserObj = await browserStartPromise;
         console.log("Browser opened");
         browser = browserObj
@@ -31,7 +32,8 @@ let page, browser;
         await page.waitFor(3000);
         let questionsArr = await page.$$(".ui-btn.ui-btn-normal.primary-cta.ui-btn-line-primary.ui-btn-styled", { delay: 100 });
         let i = 0;
-        while(i < questionsArr.length) {
+        while(i < questionsArr.length) 
+        {
             await questionSolver(page, questionsArr[i], answers[i]);
             await page.waitFor(5000);
             await page.goBack();
@@ -48,7 +50,8 @@ let page, browser;
 
 // n number of question first 
 
-function waitAndClick(selector, cPage) {
+function waitAndClick(selector, cPage) 
+{
     return new Promise(function (resolve, reject) {
         let waitForModalPromise = cPage.waitForSelector(selector, { visible: true });
         waitForModalPromise
@@ -78,8 +81,7 @@ function questionSolver(page, question, answer) {
             //  reached to editor
             .then(function () {
                 // focus 
-                let waitFOrEditorToBeInFocus =
-                    waitAndClick(".monaco-editor.no-user-select.vs", page);
+                let waitFOrEditorToBeInFocus = waitAndClick(".monaco-editor.no-user-select.vs", page);
                 return waitFOrEditorToBeInFocus;
             })
             // click

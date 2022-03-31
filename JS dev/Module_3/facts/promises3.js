@@ -13,6 +13,8 @@ function myPromisifiedFsReader(filePath)
         })
     })
 }
+
+
 let fileReadPromise = myPromisifiedFsReader("./f1.txt"); // initially this will return a pending promise
 
 function successCb(data){
@@ -31,3 +33,14 @@ fileReadPromise.then(successCb).then(failureCb); // this will print jai bhambri
 fileReadPromise.then(successCb).catch(failureCb); // this will print only jai\
 // because catch is being attached to the promise which is returned by "(then)" , since then is successfull
 // so bhambri will not get printed
+
+
+
+
+
+
+
+
+
+
+

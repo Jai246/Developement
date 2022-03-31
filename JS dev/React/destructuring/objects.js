@@ -15,7 +15,7 @@ let obj = {
 // console.log(name,course,branch,enroll,roll,cgpa,gender); 
 
 // let {name:firstName,course,branch,enroll,roll,cgpa = 9.0,gender = "Male"} = obj;// we can change the variable name as well
-// console.log(name,course,branch,enroll,roll,cgpa,gender); 
+// console.log(firstName,course,branch,enroll,roll,cgpa,gender);
 
 
 let obj1 = {

@@ -20,7 +20,7 @@ let arrayStr = str.split("a");
 // get length
 let length=str.length;
 console.log(length);
-let str = "   Hello How Are You  ";
+// let str = "   Hello How Are You  ";
 let trimmedStr = str.trim();
 // console.log(trimmedStr);
 let arrString = trimmedStr.split(" ");
