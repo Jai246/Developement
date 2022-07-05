@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import './index.css';
 
-function getGameStatus(squares){
+function getGameStatus(squares)
+{
     let winCombs = [
         [0, 1, 2],
         [3, 4, 5],
@@ -88,6 +89,7 @@ class Display extends React.Component {
         }
 
         let buttons = [];
+        let arr
         for(let i = 0; i <= this.props.stepNumber; i++){
             let button;
 
