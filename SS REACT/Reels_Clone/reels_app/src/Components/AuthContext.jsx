@@ -27,9 +27,9 @@ export function AuthContextProvider({children}) {
 
     return (
         <AuthContext.Provider value = {value}>
-            {
-                mainLoader == false && children
-            }
+        {
+            mainLoader == false && children
+        }
         </AuthContext.Provider>
     )
 }
